@@ -7,6 +7,14 @@ Code and Design of the COVID Resource Tracker created by the Vectra Machine Lear
 
 ## Web Scrapper and NLP API
 
+The tweet scrapper API makes use of the ```twint``` ```nltk``` and ```flask``` libraries. 
+
+### Twint Install
+
+To install Twint use the following command
+
+```pip install twint```
+
 ## RASA Chatbot
 
 ### RASA Chatbot Installation
