@@ -46,7 +46,18 @@ All of the contents for this file have been picked up from [Rasa Masterclass](ht
 This is a TL;DR version. 
 
 ------------
-# Installing RASA, Training the bot and Running it
+# Installing RASA, training the chatbot and running it
+
+1. Create a virtual environment and install RASA using
+
+```pip install rasa```
+
+2. Do the coversational design in the ```nlu.yml``` ```stories.yml``` ```domains.yml``` present in the directory ```chatbot```
+3. Configure the pipeline in ```config.yml``` present in directory ```chatbot```
+4. Train the chatbot using the command ```rasa train```
+5. Once the training is done and model is saved, run the chatbot using ```rasa run --enable-api --cors "*"``` and ```rasa run actions```
+
+
 ------------
 
 ## Prerequisite knowledge
