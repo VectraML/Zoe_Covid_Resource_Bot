@@ -11,7 +11,7 @@ Code and Design of the COVID Resource Tracker created by the Vectra Machine Lear
 
 First install RASA Chatbot in a new virtual environment using the command 
 
-'''pip install rasa'''
+```pip install rasa```
 
 
 ## Web Scrapper and NLP API
