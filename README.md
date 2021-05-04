@@ -1,16 +1,18 @@
 # Covid_Resource_Tracker
 Code and Design of the COVID Resource Tracker created by the Vectra Machine Learning Team
 
-## Design
+# Design
 
 ![alt text](https://github.com/VectraML/Covid_Resource_Tracker/blob/Main/source/COVID_Tracker.png?raw=true)
+
+## Web Scrapper and NLP API
 
 ## RASA Chatbot
 
 ### RASA Chatbot Installation
 
 First install RASA Chatbot in a new virtual environment using the command 
-# RasaBasicSetup
+# Rasa Chatbot
 A basic rasa setup which can be built upon
 
 All of the contents for this file have been picked up from [Rasa Masterclass](https:**//info.rasa.com/masterclass).
@@ -198,8 +200,4 @@ Useful resources:
 6. [Rasa Action Server](https://rasa.com/docs/action-server) - Runs custom actions for a Rasa Open Source conversational assistant.
 
 The masterclass provides additional customizations to various aspects of the bot, which are useful to checkout!
- 
 
-
-
-## Web Scrapper and NLP API
