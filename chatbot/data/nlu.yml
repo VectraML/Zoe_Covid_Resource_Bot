@@ -3,6 +3,32 @@ version: "2.0"
 nlu:
 - intent: need_oxygen_with_location
   examples: |
+    - Are [oxygen](resource) cylinders available in [Ernakulam](location)?
+    - Are there [oxygen](resource) plants in [Meerut](location)?
+    - Can I avail [oxygen](resource) cylinders from [oxygen](resource) plants for individual purposes in [Hyderabad](location)?
+    - Can I get an [oxygen](resource) cylinder without a prescription in [Agra](location)?
+    - Where can I get an [oxygen](resource) cylinder in [Vishakhapattanam](location)?
+    - Nearest places where I can get an [oxygen](resource) cylinder, from other than [Varanasi](location) city?
+    - Where can I get an [oxygen](resource) cylinder and [Trivendrum](location)?
+    - Government [oxygen](resource) cylinders facilities [Nagpur](location).
+    - Private [oxygen](resource) cylinders facilities [Jaipur](location).
+    - Price of [oxygen](resource) cylinders [Raipur](location).
+    - Contact number of authorities of [oxygen](resource) plants [Bilaspur](location)?
+    - Contact number of a person providing [oxygen](resource) cylinders [Thane](location)?
+    - Where can I refill [oxygen](resource) cylinder in [Chandigarh](location)?
+    - Are [oxygen](resource) cylinders available in [Bareilly](location)?
+    - Are [oxygen](resource) cylinders available in [Muzzafarnagar](location)?
+    - Are [oxygen](resource) cylinders available in [Allepy](location)?
+    - Are [oxygen](resource) cylinders available in [Jhargram](location)?
+    - Are [oxygen](resource) cylinders available in [Mussorie](location)?
+    - Are [oxygen](resource) cylinders available in [Bhopal](location)?
+    - Are [oxygen](resource) cylinders available in [Allahabad](location)?
+    - Are [oxygen](resource) cylinders available in [Lucknow](location)?
+    - Where can I find [oxygen](resource) cylinders in [Ahmedabad](location)?
+    - I am looking for [oxygen](resource) in and around [Patna](location)?
+    - Where can I find [oxygen](resource) in [Bhopal](location). It’s very urgent. Please help!
+    - What’s the [oxygen](resource) availability status in [Tamil Nadu](location)?
+    - I am looking for [oxygen](resource) suppliers in [Shillong](location). Please contact me on +918298396020 if anyone has any leads.
     - Are [oxygen](resource) cylinders available in [Delhi](location)?
     - Are there [oxygen](resource) plants in [Pune](location)?
     - Can I avail [oxygen](resource) cylinders from [oxygen](resource) plants for individual purposes in [Hyderabad](location)?
@@ -385,6 +411,11 @@ nlu:
 
 - intent: looking_for_medicine
   examples: |
+    -  I want medicine
+    -  I want pharmacy
+    -  I want medicines for covid
+    -  I want medicine Urgently
+    -  I need medicine urgent.
     -  I am looking for medicines
     -  I am looking for meds 
     -  Where can I get medicine
@@ -396,7 +427,13 @@ nlu:
     -  I want medicine. Can I get names and number of the supplier
     -  Where can I find the medicine supplier
     -  Where can I find COVID medicines?
-    -  
+    -  Are there any verified leads for covid medicines?
+    -  Show me verified leads only for covid medicines
+    -  Show me only verified leads for covid medicines
+    -  Show me verified leads for covid medicines only
+    -  I want to find medicines
+    -  Find pharmacy
+    
 
 - intent: need_medicines_with_location
   examples: |
@@ -485,7 +522,10 @@ nlu:
     - Can I get [Fabiflu](resource) medicine now in [Noida](location)?
 
 - intent: need_medicines
-  examples: | 
+  examples: |
+    - I want [Ivermectin](resource)
+    - Where can I find [Hydrochloroquine](resource)?
+    - I am in need of [Ivermectin](resource)
     - Is [remdesivir](resource) available in my city?
     - Is [Fabiflu](resource) available in my city?
     - Is [Tocilizumab](resource) available in my city?
@@ -539,19 +579,13 @@ nlu:
     - Price of a [Fabiflu](resource) dose
     - Is there any covid medicine available?
     - Is there any [remdesivir](resource) available?
-    - Are there any verified leads for covid medicines?
     - Are there verified leads for covid medicines?
     - Are there verified leads for [Fabiflu](resource)?
     - Are there verified leads for [Dexamethasone](resource)? 
     - Are there verified leads for [remdesivir](resource)?
     - Are there verified leads for [azithromycin](resource)?
-    - Show me verified leads only for covid medicines
-    - Show me only verified leads for covid medicines
-    - Show me verified leads for covid medicines only
     - Are there any pharmaceuticals selling [remdesivir](resource) near me?
     - Are there any pharmaceuticals selling [azithromycin](resource) near me?
-    - I want to find medicines
-    - Find pharmacy
     - Find [Fabiflu](resource) 
     - Find [Fabiflu](resource) 
     - Find [Doxycycline](resource) 
@@ -570,6 +604,47 @@ nlu:
     - [Agra](location)
     - [Srinagar](location)
     - [Ahmedabad](location)
+    - [Patna](location)
+    - [Agra](location)
+    - [Jaisalmer](location)
+    - [Jodhpur](location)
+    - [Jhargram](location)
+    - [Ranchi](location)
+    - [Jamshedpur](location)
+    - [Daltonganj](location)
+    - [Hazaribagh](location)
+    - [Muzzafarnagar](location)
+    - [Kalyan](location)
+    - [Dombivli](location)
+    - [Navi Mumbai](location)
+    - [Chennai](location)
+    - [Ernakulam](location)
+    - [Thiruvanathpuram](location)
+    - [Wayanad](location)
+    - [Kochi](location)
+    - [Kanpur](location)
+    - [Meerut](location)
+    - [Dehradun](location)
+    - [Amritsar](location)
+    - [Ambala](location)
+    - [Faridabad](location)
+    - [Noida](location)
+    - [Belapur](location)
+    - [Tarapur](location)
+    - [Darbhanga](location)
+    - [Kolhapur](location)
+    - [Belgaum](location)
+    - [Tumkura](location)
+    - [Belgavi](location)
+    - [Jaipur](location)
+    - [Sonipat](location)
+    - [Panipat](location)
+    - [Haridwar](location)
+    - [Rishikesh](location)
+    - [Rameshwaram](location)
+    - [Tawang](location)
+    - [Agartala](location)
+
 
     
 - intent: vaccination_query
@@ -601,6 +676,8 @@ nlu:
 
 - intent: vaccination_types
   examples: |
+    - Which vaccines are available in right now?
+    - Which vaccine are there?
     - Types of Vaccine
     - What are the type of vaccines available in India?
     - Which kind of vaccines are available in India?
@@ -680,6 +757,7 @@ nlu:
     - What's the efficacy of the covishield vaccine?
     - Which is the best vaccine?
     - Which vaccine is better?
+    - Which vaccine is good for me?
     - How effective is covishield?
     - How effective is Covaxin?
     - How effective is sputnik?
@@ -691,6 +769,21 @@ nlu:
 
 - intent: vaccination_side_effects_and_benefits
   examples: |
+    - Will I get fever after vaccine ?
+    - Will I fall sick?
+    - Is vaccine dangerous?
+    - Is vaccination safe?
+    - Is vaccination harmful for me?
+    - Will covishield protect me from Covid?
+    - Will covaxin prevent me from Covid?
+    - Will Sputnik V protect me from Covid?
+    - Will vaccination make me sick?
+    - Will covishield make me sick?
+    - Will I get covid after vaccines?
+    - Am I at a greater risk of falling sick after vaccination?
+    - I am having diabetes. Is vaccine safe for me?
+    - I am having hypertension. Is vaccine safe?
+    - Is vaccine safe for people with co-morbidity?
     - Vaccine Side Effects and Benefits 
     - What are the most common side effects of Covishield?
     - Can vaccine stop coronavirus?
@@ -749,6 +842,9 @@ nlu:
 
 - intent: vaccination_registration_centre_pricing
   examples: |
+    - Where can I get vaccinated?
+    - I am looking for vaccination centre. Where can I find that information?
+    - Vaccination centre?
     - Vaccine Registration and Centre and Pricing 
     - Where can I register for the vaccine?
     - Vaccine centre near me?

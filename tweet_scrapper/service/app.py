@@ -13,6 +13,7 @@ from flask import Flask, request, redirect, url_for, flash, jsonify
 from flask_cors import CORS, cross_origin
 import numpy as np
 import twint
+import nest_asyncio
 import json
 import pickle
 from io import BytesIO
@@ -41,6 +42,7 @@ def tweets():
     config_twint.Pandas = True
 
     # Scrapping for tweets
+    nest_asyncio.apply()
     twint.run.Search(config_twint)
 
     # Storing into dataframe and selecting tweet column
