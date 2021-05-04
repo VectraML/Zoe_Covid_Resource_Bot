@@ -7,11 +7,12 @@ Code and Design of the COVID Resource Tracker created by the Vectra Machine Lear
 
 The whole website is made up of 3 component:
 - Responsive Front End (Built using HTML, CSS and Javascript)
-- RASA Chatbot API (Running on port 5005 and interacting with the front end website to generate dialogue and capture required data for scrapper.) 
+- RASA Chatbot API (Running on port 5005 and interacting with the front end website to generate dialogue and capture required data for scrapper)
+- Twitter Scrapper and NLP to filter relevant tweets about a COVID related resource (Running on port 5000 and interacting with the front website to display the result)  
 
 ## Web Scrapper and NLP API
 
-The tweet scrapper API makes use of the ```twint``` ```nltk``` ```sci-kit learn``` ```flask``` libraries. 
+The tweet scrapper API makes use of the ```twint``` ```nltk``` ```sci-kit learn``` ```flask``` libraries 
 
 ### Twint Installation
 
