@@ -1,0 +1,198 @@
+version: "2.0"
+
+stories:
+
+- story: general conversation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_how_can_i_help
+
+
+- story: oxygen path 1
+  steps:
+  - intent: need_oxygen_with_location
+    entities:
+    - resource
+    - location
+  - slot_was_set:
+    - resource
+    - location
+  - action: utter_availability_with_location
+  - action: utter_scrape_query
+  - intent: thanking
+  - action: utter_thanking
+
+- story: oxygen path 2
+  steps:
+  - intent: need_oxygen
+    entities:
+    - resource
+  - slot_was_set:
+    - resource
+  - action: utter_ask_location
+  - intent: location
+    entities:
+    - location
+  - slot_was_set:
+    - location
+  - action: utter_availability_with_location
+  - action: utter_scrape_query
+  - intent: thanking
+  - action: utter_thanking
+
+
+
+- story: plasma path 1
+  steps:
+  - intent: need_plasma_with_location
+    entities:
+    - resource
+    - location
+  - slot_was_set:
+    - resource
+    - location
+  - action: utter_availability_with_location
+  - action: utter_scrape_query
+  - intent: thanking
+  - action: utter_thanking
+
+- story: plasma path 2
+  steps:
+  - intent: need_plasma
+    entities:
+    - resource
+  - slot_was_set:
+    - resource
+  - action: utter_ask_location
+  - intent: location
+    entities:
+    - location
+  - slot_was_set:
+    - location
+  - action: utter_availability_with_location
+  - action: utter_scrape_query
+  - intent: thanking
+  - action: utter_thanking
+
+
+- story: hospital beds path 1
+  steps:
+  - intent: need_hospital_beds_with_location
+    entities:
+    - resource
+    - location
+  - slot_was_set:
+    - resource
+    - location
+  - action: utter_availability_with_location
+  - action: utter_scrape_query
+  - intent: thanking
+  - action: utter_thanking
+
+- story: hospital beds path 2
+  steps:
+  - intent: need_hospital_beds
+    entities:
+    - resource
+  - slot_was_set:
+    - resource
+  - action: utter_ask_location
+  - intent: location
+    entities:
+    - location
+  - slot_was_set:
+    - location
+  - action: utter_availability_with_location
+  - action: utter_scrape_query
+  - intent: thanking
+  - action: utter_thanking
+
+- story: medicine path 0 
+  steps:
+  - intent: looking_for_medicine
+  - action: utter_which_medicine
+  - intent: need_medicines
+    entities:
+    - resource
+  - slot_was_set:
+    - resource
+  - action: utter_ask_location
+  - intent: location
+    entities:
+    - location
+  - slot_was_set:
+    - location
+  - action: utter_availability_with_location
+  - action: utter_scrape_query
+  - intent: thanking
+  - action: utter_thanking
+
+- story: medicine path 1
+  steps:
+  - intent: need_medicines_with_location
+    entities:
+    - resource
+    - location
+  - slot_was_set:
+    - resource
+    - location
+  - action: utter_availability_with_location
+  - action: utter_scrape_query
+  - intent: thanking
+  - action: utter_thanking
+
+- story: medicine path 2
+  steps:
+  - intent: need_medicines
+    entities:
+    - resource
+  - slot_was_set:
+    - resource
+  - action: utter_ask_location
+  - intent: location
+    entities:
+    - location
+  - slot_was_set:
+    - location
+  - action: utter_availability_with_location
+  - action: utter_scrape_query
+  - intent: thanking
+  - action: utter_thanking
+
+
+
+- story: vaccination 1 query
+  steps:
+  - intent: vaccination_query
+  - action: utter_vaccination_query_reply
+
+- story: vaccination 2 types
+  steps:
+  - intent: vaccination_types
+  - action: utter_vaccination_types_reply
+
+- story: vaccination 3 eligibility
+  steps:
+  - intent: vaccination_eligibility
+  - action: utter_vaccination_eligibility
+
+- story: vaccination 4 efficacy
+  steps:
+  - intent: vaccination_efficacy
+  - action: utter_vaccination_efficacy
+
+- story: vaccination 5 side effects and benefits
+  steps:
+  - intent: vaccination_side_effects_and_benefits
+  - action: utter_vaccination_side_effects_and_benefits
+
+- story: vaccination 6 dosage regime
+  steps:
+  - intent: vaccination_dosage_regime
+  - action: utter_vaccination_query_dosage_regime
+
+- story: vaccination 7 registration centre pricing
+  steps:
+  - intent: vaccination_registration_centre_pricing
+  - action: utter_vaccination_registration_centre_pricing

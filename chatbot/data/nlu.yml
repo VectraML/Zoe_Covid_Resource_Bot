@@ -1,0 +1,918 @@
+version: "2.0"
+
+nlu:
+- intent: need_oxygen_with_location
+  examples: |
+    - Are [oxygen](resource) cylinders available in [Ernakulam](location)?
+    - Are there [oxygen](resource) plants in [Meerut](location)?
+    - Can I avail [oxygen](resource) cylinders from [oxygen](resource) plants for individual purposes in [Hyderabad](location)?
+    - Can I get an [oxygen](resource) cylinder without a prescription in [Agra](location)?
+    - Where can I get an [oxygen](resource) cylinder in [Vishakhapattanam](location)?
+    - Nearest places where I can get an [oxygen](resource) cylinder, from other than [Varanasi](location) city?
+    - Where can I get an [oxygen](resource) cylinder and [Trivendrum](location)?
+    - Government [oxygen](resource) cylinders facilities [Nagpur](location).
+    - Private [oxygen](resource) cylinders facilities [Jaipur](location).
+    - Price of [oxygen](resource) cylinders [Raipur](location).
+    - Contact number of authorities of [oxygen](resource) plants [Bilaspur](location)?
+    - Contact number of a person providing [oxygen](resource) cylinders [Thane](location)?
+    - Where can I refill [oxygen](resource) cylinder in [Chandigarh](location)?
+    - Are [oxygen](resource) cylinders available in [Bareilly](location)?
+    - Are [oxygen](resource) cylinders available in [Muzzafarnagar](location)?
+    - Are [oxygen](resource) cylinders available in [Allepy](location)?
+    - Are [oxygen](resource) cylinders available in [Jhargram](location)?
+    - Are [oxygen](resource) cylinders available in [Mussorie](location)?
+    - Are [oxygen](resource) cylinders available in [Bhopal](location)?
+    - Are [oxygen](resource) cylinders available in [Allahabad](location)?
+    - Are [oxygen](resource) cylinders available in [Lucknow](location)?
+    - Where can I find [oxygen](resource) cylinders in [Ahmedabad](location)?
+    - I am looking for [oxygen](resource) in and around [Patna](location)?
+    - Where can I find [oxygen](resource) in [Bhopal](location). It’s very urgent. Please help!
+    - What’s the [oxygen](resource) availability status in [Tamil Nadu](location)?
+    - I am looking for [oxygen](resource) suppliers in [Shillong](location). Please contact me on +918298396020 if anyone has any leads.
+    - Are [oxygen](resource) cylinders available in [Delhi](location)?
+    - Are there [oxygen](resource) plants in [Pune](location)?
+    - Can I avail [oxygen](resource) cylinders from [oxygen](resource) plants for individual purposes in [Hyderabad](location)?
+    - Can I get an [oxygen](resource) cylinder without a prescription in [Agra](location)?
+    - Where can I get an [oxygen](resource) cylinder in [Vishakhapattanam](location)?
+    - Nearest places where I can get an [oxygen](resource) cylinder, from other than [Varanasi](location) city?
+    - Where can I get an [oxygen](resource) cylinder and [Trivendrum](location)?
+    - Government [oxygen](resource) cylinders facilities [Nagpur](location).
+    - Private [oxygen](resource) cylinders facilities [Jaipur](location).
+    - Price of [oxygen](resource) cylinders [Raipur](location).
+    - Contact number of authorities of [oxygen](resource) plants [Bilaspur](location)?
+    - Contact number of a person providing [oxygen](resource) cylinders [Thane](location)?
+    - Where can I refill [oxygen](resource) cylinder in [Chandigarh](location)?
+    - Are [oxygen](resource) cylinders available in [Mumbai](location)?
+    - Are [oxygen](resource) cylinders available in [Delhi](location)?
+    - Are [oxygen](resource) cylinders available in [Chennai](location)?
+    - Are [oxygen](resource) cylinders available in [Kolkata](location)?
+    - Are [oxygen](resource) cylinders available in [Banglore](location)?
+    - Are [oxygen](resource) cylinders available in [Bhopal](location)?
+    - Are [oxygen](resource) cylinders available in [Allahabad](location)?
+    - Are [oxygen](resource) cylinders available in [Lucknow](location)?
+    - Where can I find [oxygen](resource) cylinders in [Ahmedabad](location)?
+    - I am looking for [oxygen](resource) in and around [Patna](location)?
+    - Where can I find [oxygen](resource) in [Bhopal](location). It’s very urgent. Please help!
+    - What’s the [oxygen](resource) availability status in [Tamil Nadu](location)?
+    - I am looking for [oxygen](resource) suppliers in [Patna](location). Please contact me on +918298396020 if anyone has any leads.
+    - Urgently looking for [oxygen](resource) for patient in [Delhi](location) whose SP02 levels are falling
+    - Any leads for [oxygen](resource) in and around [Thane](location) would be highly appreciated.
+    - Call for help!. Please help us procure [oxygen](resource) for elderly patient in a critical condition in Ahmedabad
+    - Can anyone provide me the contact details of [oxygen](resource) cylinder vendors in [Hyderabad](location)?
+    - Please help me find [oxygen](resource) resources in [Jammu](location)?
+    - Where do I get [oxygen](resource) cylinder in [Kanpur](location)?
+    - need [oxygen](resource) in [hyderabad](location)?
+    - immediate requirement of [oxygen](resource) in [kanpur](location)?
+    - where can i find [oxygen](resource) in [kasol](location)?
+    - are [oxygen](resource) cylinders available in [bombay(location)?
+    - [oxygen](resource) available in [vizag](location)?
+    - need [oxygen](resource) in [tirupathi](location) ?
+    - [oxygen](resource) available at [lucknow](location)?
+    - where can i get [oxygen](resource) in [shimla](location)?
+    - need 100 liters of [oxygen](resource) in [warangal](location)?
+    - emergency require [oxygen](resource) in [chennai](location)?
+    - Are [oxygen](resource) cylinders available in [Mumbai](location)
+    - Any Government [oxygen](resource) cylinder provider near [Bhopal](location)
+    - From where i can refill [oxygen](resource) cylinder in [Indore](location)
+    - Looking for [oxygen](resource) cylinder in [Agra](location)
+    - Urgent required for [oxygen](resource) cylinder in [Gwalior](location)
+    - Looking for contact details for [oxygen](resource) cylinder in [Gurgaon](location)
+
+
+- intent: need_oxygen
+  examples: |
+    - Are [oxygen](resource) cylinders available in my city?
+    - Are there [oxygen](resource) plants in my city?
+    - Can I avail [oxygen](resource) cylinders from [oxygen](resource) plants for individual purposes?
+    - Can I get an [oxygen](resource) cylinder without a prescription?
+    - Where can I get an [oxygen](resource) cylinder in my city?
+    - Nearest places where I can get an [oxygen](resource) cylinder, from other than my city?
+    - Where can I get an [oxygen](resource) cylinder and bed?
+    - Government [oxygen](resource) cylinders facilities near me.
+    - Private [oxygen](resource) cylinders facilities near me.
+    - Price of [oxygen](resource) cylinders near me.
+    - Contact number of authorities of [oxygen](resource) plants near me?
+    - Contact number of a person providing [oxygen](resource) cylinders near me?
+    - Where can I refill [oxygen](resource) cylinder?
+    - How many [oxygen](resource) cylinders can I get?
+    - How much cost will it take to refill [oxygen](resource) cylinders?
+    - I am looking for [oxygen](resource).
+    - Where can I find [oxygen](resource). It’s very urgent. Please help!
+    - What’s the [oxygen](resource) availability?
+    - I am looking for [oxygen](resource) suppliers. Please contact me on +918298396020 if anyone has any leads.
+    - Urgently looking for [oxygen](resource) for patient whose SP02 levels are falling
+    - Any leads for [oxygen](resource) would be highly appreciated.
+    - Call for help!. Please help us procure [oxygen](resource) for elderly patient in a critical condition
+    - Can anyone provide me the contact details of [oxygen](resource) cylinder vendors?
+    - Please help me find [oxygen](resource) resources?
+    - Where do I get [oxygen](resource) cylinder?
+    - need [oxygen](resource)!!
+    - immediate requirement of [oxygen](resource).
+    - where can i find [oxygen](resource)?
+    - are [oxygen](resource) cylinders available now?
+    - [oxygen](resource) available?
+    - need [oxygen](resource) ??
+    - [oxygen](resource) cylinders available?
+    - where can i get [oxygen](resource)?
+    - need 100 liters of [oxygen](resource)?
+    - emergency require [oxygen](resource)?
+    - Looking for [oxygen](resource) cylinder
+    - Looking for refill the [oxygen](resource) cylinder
+    - How can i get [oxygen](resource) cylinder
+    - Contact Person who provides [oxygen](resource) cylinder
+    - Government authorities details who are providing [oxygen](resource) cylinder
+    - Price of [oxygen](resource) cylinder
+    - Where can I get o2 cylinders? 
+    - Where can I get O2 cylinders? 
+    - Is there any o2 available?
+    - Is there any O2 available?
+    - Is there any [oxygen](resource) available?
+    - Are there any verified leads for o2?
+    - Are there verified lead for o2?
+    - Are there verified lead for O2?
+    - Show me verified leads only for O2
+    - Show me only verified leads for O2 
+    - Show me verified leads for O2 only
+    - Show me verified leads for o2 only
+    - I want to find O2 cylinders
+    - Find O2 
+    - Find [oxygen](resource) 
+    - Find [oxygen](resource) 
+    - Find o2 
+
+
+
+- intent: need_plasma_with_location
+  examples: |
+    - Are [plasma](resource) donors available in [Delhi](location)?
+    - Are there [plasma](resource) centers in [Pune](location)?
+    - Can I avail [plasa](resource) from [plasma](resource) centers for individual purposes in [Hyderabad](location)?
+    - Can I get  [plasma](resource) without a prescription in [Agra](location)?
+    - Where can I get [plasma](resource) in [Vishakhapattanam](location)?
+    - Nearest places where I can get [plasma](resource) , from other than [Varanasi](location) city?
+    - Where can I get [plasma](resource) and [Trivandrum](location)?
+    - Government [plasma](resource) center facilities [Nagpur](location).
+    - Private [plasma](resource) center facilities [Jaipur](location).
+    - Price of [plasma](resource) [Raipur](location).
+    - Contact number of authorities of [plasma](resource) centers [Bilaspur](location)?
+    - Contact number of a person providing [plasma](resource) [Thane](location)?
+    - Where can I find [plasma](resource) centers in [Chandigarh](location)?
+    - Are [plasma](resource) donors available in [Mumbai](location)?
+    - Are [plasma](resource) donors available in [Delhi](location)?
+    - Are [plasma](resource) donors available in [Chennai](location)?
+    - Are [plasma](resource) donors available in [Kolkata](location)?
+    - Are [plasma](resource) donors available in [Banglore](location)?
+    - Are [plasma](resource) donors available in [Bhopal](location)?
+    - Are [plasma](resource) donors available in [Allahabad](location)?
+    - Are [plasma](resource) donors available in [Lucknow](location)?
+    - Where can I find [plasma](resource) centers in [Ahmedabad](location)?
+    - I am looking for [palsma](resource) donors in and around [Patna](location)?
+    - Where can I find [plasma](resource) donors in [Bhopal](location). It’s very urgent. Please help!
+    - What’s the [plasma](resource) availability status in [Tamil Nadu](location)?
+    - I am looking for [plasma](resource) donors in [Patna](location). Please contact me on +918298396020 if anyone has any leads.
+    - Urgently looking for [plasma](resource) for patient in [Delhi](location) 
+    - Any leads for [plasma](resource) donors in and around [Thane](location) would be highly appreciated.
+    - Call for help!. Please help us procure [plasma](resource) for elderly patient in a critical condition in Ahmedabad(location)
+    - Can anyone provide me the contact details of [plasma](resource) centers in [Hyderabad](location)?
+    - Please help me find [plasma](resource) resources in [Jammu](location)?
+    - Where do I get [plasma](resource) from in [Kanpur](location)?
+    - need [plasma](resource) in [hyderabad](location)?
+    - immediate requirement of [plasma](resource) in [kanpur](location)?
+    - where can i find [plasma](resource) in [kasol](location)?
+    - are [plasma](resource) centers available in [bombay(location)?
+    - [plasma](resource) available in [vizag](location)?
+    - need [plasma](resource) donors in [tirupathi](location) ?
+    - [plasma](resource) available at [lucknow](location)?
+    - where can i get [plasma](resource) in [shimla](location)?
+    - need [plasma](resource) in [warangal](location)?
+    - emergency require [plasma](resource) in [chennai](location)?
+    - Are [plasma](resource) donors available in [Mumbai](location)
+    - Any Government [plasma](resource) center near [Bhopal](location)
+    - From where i can get [plasma](resource) in [Indore](location)
+    - Looking for [plasma](resource) center in [Agra](location)
+    - Urgent required for [plasma](resource) donors in [Gwalior](location)
+    - Looking for contact details of [plasma](resource) donors in [Gurgaon](location)
+    - Does [plasma](resource) center have [plasma](resource) availbility in [Mangalore](location)?
+    - Are there any [plasma](resource) centers near [Puducherry](location) with available [plasma](resource)?
+    - Are [plasma](resource) transfers in [Nashik](location) possbile now? 
+    - Contact details of the officials doing [plasma](resource) transfer in [Salem](location). 
+    - Contact information of officials doing [plasma](resource) therapy in [Coimbatore](location). 
+    - Are there any [plasma](resource) centers in [Goa](location) doing [plasma](resource) transfer?
+    - Are there any [plasma](resource) centers [Calicut](location) doing [plasma](resource) therapy?
+    - Are there any [plasma](resource) donors in [Varanasi](location) doing [plasma](resource) ?
+    - Are [plasma](resource) donors near [Mysore](location) doing [plasma](resource) transfer now?
+    - Where can I find Anti-A [plasma](resource) donors in [Ludhiana](location)?
+    - Where can I find Anti-A [plasma](resource) donors in [Amritsar](location)?
+    - Where can I find Anti-B [plasma](resource) donors in [Nagpur](location)?
+    - Where can I find Anti-B [plasma](resource) donors in [Surat](location)? 
+    - Which facility in [Bhopal](location) has Anti-A [plasma](resource)?
+    - Which center in [Bhubaneshwar](location) has Anti-B [plasma](resource)?
+    - Which [plasma](resource) center in [Pondicherry](location) has Anti-A [plasma](resource) now?
+    - Which [plasma](resource) center in [Vellore](location) has Anti-B [plasma](resource) now?
+    - Contact number of Anti-A [plasma](resource) donor near [Madurai](location).
+    - Contact details of Anti-A [plasma](resource) donor in [Ghaziabad](location).
+    - Contact information of Anti-A [plasma](resource) donor in [Allahabad](location).
+    - Contact information of government [plasma](resource) facility in [Meerut](location) with Anti-A [plasma](resource).
+    - Personal contacr of officials of [plasma](resource) facility in [Jodhpur](location) with Anti-A [plasma](resource)
+    - Contact number of Anti-B [plasma](resource) donor near [Raipur](location).
+    - Contact details of Anti-B [plasma](resource) donor in [Faridabad](location).
+    - Contact information of Anti-B [plasma](resource) donor in [New Delhi](location).
+    - Contact information of government [plasma](resource) facility with Anti-B [plasma](resource) near [Bangalore](location).
+    - Personal contact of officials of [plasma](resource) facility with Anti-B [plasma](resource) in [Delhi](location).
+    - [plasma](resource) donation now in [Navi Mumbai](location). 
+    - [plasma](resource) donation near [Vijayawada](location).
+    - Covalescent [plasma](resource) therapy near [Udaipur](location). 
+    - Who is doing covalescent [plasma](resource) therapy near [Shimla](location). 
+    - Who is doing convalescent [plasma](resource) therapy now in [Aurangabad](location). 
+    - Where can I get convalescent [plasma](resource) therapy in [Dehradun](location)?
+    - Who do I contact for convalescent [plasma](resource) therapy near [Rajkot](location)?
+    - Where do I go to get convalescent [plasma](resource) therapy done in [Jabalpur](location)?
+    - Can I get convalescent [plasma](resource) therapy now in [Noida](location)?
+
+- intent: need_plasma
+  examples: |
+    - Are [plasma](resource) donors available in my city?
+    - Are there [plasma](resource) centers in my city?
+    - Can I avail [plasma](resource) from [plasma](resource) centers for individual purposes?
+    - Can I get [plasma](resource) without a prescription?
+    - Where can I get [plasma](resource) in my city?
+    - Nearest places where I can get an [plasma](resource) , from other than my city?
+    - Where can I find a [plasma](resource) donor?
+    - Government [plasma](resource) centers near me.
+    - Private [plasma](resource) centers near me.
+    - Price of [plasma](resource) near me.
+    - Contact number of authorities of [plasma](resource) centers near me?
+    - Contact number of a person providing [plasma](resource) near me?
+    - Where can I get [plasma](resource) ?
+    - How much [plasma](resource) can I get?
+    - What is the cost of buying [plasma](resource) ?
+    - I am looking for [plasma](resource).
+    - Where can I find [plasma](resource). It’s very urgent. Please help!
+    - What’s the [plasma](resource) availability?
+    - I am looking for [plasma](resource) donors. Please contact me on +918298396020 if anyone has any leads.
+    - Urgently looking for [plasma](resource) for patient.
+    - Any leads for [plasma](resource) donors would be highly appreciated.
+    - Call for help!. Please help us procure [plasma](resource) for elderly patient in a critical condition
+    - Can anyone provide me the contact details of [plasma](resource) center officials?
+    - Please help me find [plasma](resource) resources?
+    - Where do I find [plasma](resource) donors?
+    - need [plasma](resource)!!
+    - immediate requirement of [plasma](resource).
+    - where can i find [plasma](resource)?
+    - are [plasma](resource) donors available now?
+    - [plasma](resource) available?
+    - need [plasma](resource) ??
+    - [plasma](resource) donors available?
+    - where can i get [plasma](resource)?
+    - emergency require [plasma](resource)?
+    - Looking for [plasma](resource) donors
+    - Looking for buying [plasma](resource) 
+    - How can i find [plasma](resource) donor
+    - Contact Person who provides [plasma](resource) transfer
+    - Government authorities details who are providing [plasma](resource) transfer
+    - Price of [plasma](resource) therapy
+    - Find [plasma](resource) 
+    - Does [plasma](resource) center have [plasma](resource) availbility?
+    - Are there any [plasma](resource) centers near me with available [plasma](resource)?
+    - Are [plasma](resource) transfers possbile now? 
+    - Contact details of the officials doing [plasma](resource) transfer. 
+    - Contact information of officials doing [plasma](resource) therapy. 
+    - Are there any [plasma](resource) centers doing [plasma](resource) transfer?
+    - Are there any [plasma](resource) centers doing [plasma](resource) therapy?
+    - Are there any [plasma](resource) donors doing [plasma](resource) transfer near me?
+    - Are [plasma](resource) donors doing [plasma](resource) transfer now?
+    - Where can I find Anti-A [plasma](resource) donors?
+    - Where can I find Anti-A [plasma](resource) donors near me?
+    - Where can I find Anti-B [plasma](resource) donors?
+    - Where can I find Anti-B [plasma](resource) donors near me? 
+    - Which facility has Anti-A [plasma](resource)?
+    - Which place has Anti-B [plasma](resource)?
+    - Which [plasma](resource) center near me has Anti-A [plasma](resource) now?
+    - Which [plasma](resource) center near me has Anti-B [plasma](resource) now?
+    - Contact number of Anti-A [plasma](resource) donor.
+    - Contact details of Anti-A [plasma](resource) donor.
+    - Contact information of Anti-A [plasma](resource) donor.
+    - Contact information of government [plasma](resource) facility with Anti-A [plasma](resource).
+    - Personal contacr of officials of [plasma](resource) facility with Anti-A [plasma](resource)
+    - Contact number of Anti-B [plasma](resource) donor.
+    - Contact details of Anti-B [plasma](resource) donor.
+    - Contact information of Anti-B [plasma](resource) donor.
+    - Contact information of government [plasma](resource) facility with Anti-B [plasma](resource).
+    - Personal contacr of officials of [plasma](resource) facility with Anti-B [plasma](resource).
+    - [plasma](resource) donation now. 
+    - [plasma](resource) donation near me.
+    - Covalescent [plasma](resource) therapy near me. 
+    - Who is doing covalescent [plasma](resource) therapy near me. 
+    - Who is doing convalescent [plasma](resource) therapy now. 
+    - Where can I get convalescent [plasma](resource) therapy?
+    - Who do I contact for convalescent [plasma](resource) therapy?
+    - Where do I go to get convalescent [plasma](resource) therapy done?
+    - Can I get convalescent [plasma](resource) therapy now? 
+
+
+- intent: need_hospital_beds_with_location
+  examples: |
+    - Are [hospital beds](resource) available in [Delhi](location)?
+    - Are there hospital beds(resource) in [Pune](location)?
+    - Can I avail [hospital bed](resource) for individual purpose in [Hyderabad](location)?
+    - Where can I get a [hospital bed](resource) in [Vishakhapattanam](location)?
+    - Nearest places where I can get [hospital beds](resource), from other than [Varanasi](location) city?
+    - Where can I get a [hospital bed](resource) and [Trivendrum](location)?
+    - Government [hospital beds](resource) facility [Nagpur](location).
+    - Private [hospital beds](resource) facility [Jaipur](location).
+    - Price of [hospital bed](resource) [Raipur](location).
+    - Contact number of authorities of [hospital beds](resource) [Bilaspur](location)?
+    - Contact number of a person providing [hospital beds](resource) [Thane](location)?
+    - Are [hospital beds](resource) available in [Mumbai](location)?
+    - Are [hospital beds](resource) available in [Delhi](location)?
+    - Are [hospital beds](resource) available in [Chennai](location)?
+    - Are [hospital beds](resource) available in [Kolkata](location)?
+    - Are [hospital beds](resource) available in [Banglore](location)?
+    - Are [hospital beds](resource) available in [Bhopal](location)?
+    - Are [hospital beds](resource) available in [Allahabad](location)?
+    - Are [hospital beds](resource) available in [Lucknow](location)?
+    - Where can I find [hospital beds](resource) in [Ahmedabad](location)?
+    - I am looking for [hospital beds](resource) in and around [Patna](location)?
+    - Where can I find [hospital beds](resource) in [Bhopal](location). It’s very urgent. Please help!
+    - What’s the [hospital bed](resource) availability status in [Tamil Nadu](location)?
+    - I am looking for [hospital bed](resource) suppliers in [Patna](location). Please contact me on +918298396020 if anyone has any leads.
+    - Urgently looking for [hospital beds](resource) for patient in [Delhi](location) whose SP02 levels are falling
+    - Any leads for [hospital beds](resource) in and around [Thane](location) would be highly appreciated.
+    - Call for help!. Please help us procure [hospital beds](resource) for elderly patient in a critical condition in Ahmedabad
+    - Can anyone provide me the contact details of [hospital bed](resource) vendors in [Hyderabad](location)?
+    - Please help me find [hospital beds](resource) resources in [Jammu](location)?
+    - Where do I get [hospital beds](resource) in [Kanpur](location)?
+    - need [hospital bed](resource) in [hyderabad](location)?
+    - immediate requirement of [hospital bed](resource) in [kanpur](location)?
+    - where can i find a [hospital bed](resource) in [kasol](location)?
+    - are [hospital beds](resource) available in [bombay(location)?
+    - [hospital beds](resource) available in [vizag](location)?
+    - need [hospital beds](resource) in [tirupathi](location) ?
+    - [hospital beds](resource) available at [lucknow](location)?
+    - where can i get [hospital beds](resource) in [shimla](location)?
+    - emergency require [hospital beds](resource) in [chennai](location)?
+    - Are [hospital beds](resource) available in [Mumbai](location)
+    - Any Government [hospital beds](resource) provider near [Bhopal](location)
+    - Looking for [hospital beds](resource) in [Agra](location)
+    - Urgent required for [hospital beds](resource) in [Gwalior](location)
+    - Looking for contact details for [hospital bed](resource) in [Gurgaon](location)
+
+
+- intent: need_hospital_beds
+  examples: |
+    - Are [hospital beds](resource) available in my city?
+    - Can I avail [hospital beds](resource) for individual purposes?
+    - Can I get a [hospital bed](resource) without a prescription?
+    - Where can I get a [hospital bed](resource) in my city?
+    - Nearest places where I can get a [hospital bed](resource), from other than my city?
+    - Where can I get a [hospital bed](resource) and oxygen?
+    - Government [hospital beds](resource) facilities near me.
+    - Private [hospital beds](resource) facilities near me.
+    - Price of [hospital beds](resource) near me.
+    - Contact number of authorities providing [hospital beds](resource) near me?
+    - Contact number of a person providing [hospital beds](resource) near me?
+    - How many [hospital beds](resource) can I get?
+    - How much cost will it take for a single [hospital bed](resource)?
+    - I am looking for [hospital beds](resource).
+    - Where can I find [hospital beds](resource). It’s very urgent. Please help!
+    - What’s the [hospital beds](resource) availability?
+    - I am looking for [hospital bed](resource) suppliers. Please contact me on +918298396020 if anyone has any leads.
+    - Urgently looking for [hospital beds](resource) for patient whose SP02 levels are falling
+    - Any leads for [hospital beds](resource) would be highly appreciated.
+    - Call for help!. Please help us procure [hospital beds](resource) for elderly patient in a critical condition
+    - Can anyone provide me the contact details of [hospital beds](resource) vendors?
+    - Please help me find [hospital beds](resource) resources?
+    - Where do I get [hospital beds](resource)?
+    - need [hospital beds](resource)!!
+    - immediate requirement of [hospital beds](resource).
+    - where can i find [hospital beds](resource)?
+    - are [hospital beds](resource) available now?
+    - [hospital beds](resource) available?
+    - need [hospital beds](resource) ??
+    - [hospital beds](resource) available?
+    - where can i get [hospital beds](resource)?
+    - emergency require [hospital beds](resource)?
+    - Looking for a [hospital bed](resource) 
+    - How can i get a [hospital bed](resource) 
+    - Contact Person who provides [hospital beds](resource)
+    - Government authorities details who are providing [hospital beds](resource)
+    - Price of a [hospital bed](resource)
+    - Is there any hospital bed available?
+    - Is there any [hospital bed](resource) available?
+    - Are there any verified leads for hospital beds?
+    - Are there verified lead for hospital bed?
+    - Show me verified leads only for hospital beds
+    - Show me only verified leads for hospital bed
+    - Show me verified leads for hospital beds only
+    - I want to find hospital beds
+    - Find hospital bed
+    - Find [hospital bed](resource) 
+    - Find [hospital beds](resource) 
+
+- intent: looking_for_medicine
+  examples: |
+    -  I want medicine
+    -  I want pharmacy
+    -  I want medicines for covid
+    -  I want medicine Urgently
+    -  I need medicine urgent.
+    -  I am looking for medicines
+    -  I am looking for meds 
+    -  Where can I get medicine
+    -  Where can I find meds
+    -  I need meds
+    -  I need medicine
+    -  I am looking for med
+    -  I am looking for medicines. I can't find them
+    -  I want medicine. Can I get names and number of the supplier
+    -  Where can I find the medicine supplier
+    -  Where can I find COVID medicines?
+    -  Are there any verified leads for covid medicines?
+    -  Show me verified leads only for covid medicines
+    -  Show me only verified leads for covid medicines
+    -  Show me verified leads for covid medicines only
+    -  I want to find medicines
+    -  Find pharmacy
+    
+
+- intent: need_medicines_with_location
+  examples: |
+    - Is [remdesivir](resource) stock available in [Delhi](location)?
+    - Is [Fabiflu](resource) available in [Pune](location)?
+    - Can I avail [Tocilizumab](resource) from pharmacies for individual purposes in [Hyderabad](location)?
+    - Can I get [remdesivir](resource) or [Fabiflu](resource) or [Tocilizumab](resource) without a prescription in [Agra](location)?
+    - Can I get [remdesivir](resource), [Fabiflu](resource), [Tocilizumab](resource) without a prescription in [Agra](location)?
+    - Where can I get [remdesivir](resource) in [Vishakhapattanam](location)?
+    - Nearest places where I can get [remdesivir](resource) , from other than [Varanasi](location) city?
+    - Where can I get [Fabiflu](resource) and [Trivandrum](location)?
+    - Government pharmacy to buy [Fabiflu](resource) in [Nagpur](location).
+    - Private pharmacy to buy [Fabiflu](resource) in [Jaipur](location).
+    - Price of [Tocilizumab](resource) [Raipur](location).
+    - Contact number of pharmacies selling [Tocilizumab](resource) in [Bilaspur](location)?
+    - Contact number of suppliers providing [Tocilizumab](resource) in [Thane](location)?
+    - Where can I find [remdesivir](resource) centers in [Chandigarh](location)?
+    - Are [remdesivir](resource) suppliers available in [Mumbai](location)?
+    - Are [remdesivir](resource) suppliers available in [Delhi](location)?
+    - Are [Fabiflu](resource) suppliers available in [Chennai](location)?
+    - Are [Fabiflu](resource) suppliers available in [Kolkata](location)?
+    - Are [Fabiflu](resource) suppliers available in [Banglore](location)?
+    - Are [Tocilizumab](resource) suppliers available in [Bhopal](location)?
+    - Are [Tocilizumab](resource) suppliers available in [Allahabad](location)?
+    - Are [Tocilizumab](resource) suppliers available in [Lucknow](location)?
+    - Where can I find pharmacies selling [remdesivir](resource) in  [Ahmedabad](location)?
+    - I am looking for pharmacies selling [Fabiflu](resource) in and around [Patna](location)?
+    - Where can I find pharmacies selling [Tocilizumab](resource) donors in [Bhopal](location). It’s very urgent. Please help!
+    - What’s the availability status of [remdesivir](resource) in [Tamil Nadu](location)?
+    - I am looking for suppliers of [remdesivir](resource) medicine in [Patna](location). Please contact me on +918298396020 if anyone has any leads.
+    - Urgently looking for [Fabiflu](resource) supliers for patient in [Delhi](location) 
+    - Any leads for suppliers of [Fabiflu](resource) medicine in and around [Thane](location) would be highly appreciated.
+    - Call for help!. Please help us procure [Fabiflu](resource) for elderly patient in a critical condition in Ahmedabad(location)
+    - Can anyone provide me the contact details of [remdesivir](resource) suppliers in [Hyderabad](location)?
+    - Please help me find [remdesivir](resource) resources in [Jammu](location)?
+    - Where can I get [Tocilizumab](resource) in [Kanpur](location)?
+    - need [Tocilizumab](resource) in [hyderabad](location)?
+    - immediate requirement of [remdesivir](resource) in [kanpur](location)?
+    - where can i find suppliers of [remdesivir](resource) in [kasol](location)?
+    - are pharmacies in [bombay](location) selling [Fabiflu](resource)?
+    - [Doxycycline](resource) available in [vizag](location)?
+    - need [Dexamethasone](resource) in [tirupathi](location) ?
+    - [Doxycycline](resource) stock available at [lucknow](location)?
+    - where can i get [Doxycycline](resource) medicine in [shimla](location)?
+    - need [Doxycycline](resource) in [warangal](location)?
+    - emergency require [azithromycin](resource) in [chennai](location)?
+    - Are [azithromycin](resource) medicines available in [Mumbai](location)
+    - Any Government pharmacy near [Bhopal](location) selling [Dexamethasone](resource)?
+    - From where i can get [Dexamethasone](resource) medicine in [Indore](location)
+    - Looking for [Dexamethasone](resource) medicine in [Agra](location)
+    - Urgent required for [Doxycycline](resource) medicine in [Gwalior](location)
+    - Looking for contact details of suppliers selling [Doxycycline](resource) medicine in [Gurgaon](location)
+    - Do pharmacies have [azithromycin](resource) medicine in [Mangalore](location)?
+    - Are there any pharmacies near [Puducherry](location) with available stock of [azithromycin](resource) medicine?
+    - Are pharmacies in [Nashik](location) selling [azithromycin](resource) now? 
+    - Contact details of of pharmacies with new stock of [azithromycin](resource) in [Salem](location). 
+    - Contact information of pharmacies with stock of [azithromycin](resource) in [Coimbatore](location). 
+    - Do [Doxycycline](resource) suppliers in [Goa](location) have stock available?
+    - Do [Doxycycline](resource) suppliers in [Calicut](location) have stock available?
+    - Do [azithromycin](resource) suppliers in [Varanasi](location) have stock now?
+    - Do [Dexamethasone](resource) suppliers near [Mysore](location) have stock now?
+    - Where can I find fresh stock of [remdesivir](resource) and [Fabiflu](resource) medicines in [Ludhiana](location)?
+    - Where can I find stock of [remdesivir](resource) and [Tocilizumab](resource) medicines in [Amritsar](location)?
+    - Where can I find pharmacies selling [remdesivir](resource) and [Tocilizumab](resource) in [Nagpur](location)?
+    - Where can I find suppliers of [remdesivir](resource) and [Fabiflu](resource) in [Surat](location)? 
+    - Which pharmacy in [Bhopal](location) has fresh stock of [remdesivir](resource) and [Fabiflu](resource) medicines?
+    - Which supplier in [Bhubaneshwar](location) has latest stock of [remdesivir](resource)?
+    - Which supplier in [Pondicherry](location) has [remdesivir](resource) medicine fresh stock?
+    - Which pharmacy in [Vellore](location) has [Fabiflu](resource) stock now?
+    - Contact number of agents with fresh stock of [Fabiflu](resource) in [Madurai](location).
+    - Contact details of with stock of [Fabiflu](resource) in [Ghaziabad](location).
+    - Contact information of pharmacies [Tocilizumab](resource) in [Allahabad](location).
+    - Contact number of suppliers selling [Tocilizumab](resource) near [Raipur](location).
+    - Contact details of pharmacies selling [Tocilizumab](resource) in [Faridabad](location).
+    - Contact information of suppliers of [Tocilizumab](resource) in [New Delhi](location).
+    - Contact information of pharmacies selling [Fabiflu](resource) near [Bangalore](location).
+    - Personal contact of suppliers of [remdesivir](resource) medicines in [Delhi](location).
+    - Is there [Fabiflu](resource) supply now in [Navi Mumbai](location). 
+    - [Tocilizumab](resource) availability near [Vijayawada](location).
+    - [remdesivir](resource) near [Udaipur](location). 
+    - Who is supplying [remdesivir](resource) medicines near [Shimla](location). 
+    - Who is supplying [remdesivir](resource) now in [Aurangabad](location). 
+    - Where can I get [Tocilizumab](resource) medicine in [Dehradun](location)?
+    - Who do I contact for [Tocilizumab](resource) near [Rajkot](location)?
+    - Where do I go to get [Fabiflu](resource) in [Jabalpur](location)?
+    - Can I get [Fabiflu](resource) medicine now in [Noida](location)?
+
+- intent: need_medicines
+  examples: |
+    - I want [Ivermectin](resource)
+    - Where can I find [Hydrochloroquine](resource)?
+    - I am in need of [Ivermectin](resource)
+    - Is [remdesivir](resource) available in my city?
+    - Is [Fabiflu](resource) available in my city?
+    - Is [Tocilizumab](resource) available in my city?
+    - Can I avail [Fabiflu](resource) for individual purposes?
+    - Can I avail [Tocilizumab](resource) for individual purposes?
+    - Can I get a [Tocilizumab](resource) without a prescription?
+    - Where can I get [Tocilizumab](resource) in my city?
+    - Nearest places where I can get [remdesivir](resource), from other than my city?
+    - Where can I get [remdesivir](resource) and oxygen?
+    - Government [Fabiflu](resource) pharmacies near me.
+    - Private [Tocilizumab](resource) pharmacies near me.
+    - Price of [remdesivir](resource) near me.
+    - Price of [Fabiflu](resource) near me.
+    - Price of [Tocilizumab](resource) near me.
+    - Contact number of authorities providing [Fabiflu](resource) near me?
+    - Contact number of pharmacies providing [Tocilizumab](resource) near me?
+    - Contact number of a person providing [remdesivir](resource) near me?
+    - How many [remdesivir](resource) doses can I get?
+    - How much cost will it take for a single [remdesivir](resource) dose?
+    - I am looking for [remdesivir](resource).
+    - I am looking for [Tocilizumab](resource).
+    - I am looking for [Tocilizumab](resource).
+    - Where can I find [Tocilizumab](resource). It’s very urgent. Please help!
+    - Where can I find [remdesivir](resource). It’s very urgent. Please help!
+    - Where can I find [Fabiflu](resource). It’s very urgent. Please help!
+    - Find [remdesivir](resource) or [Tocilizumab](resource) or [Fabiflu](resource) or  [Doxycycline](resource) or [azithromycin](resource)
+    - Find [remdesivir](resource), [Tocilizumab](resource), [Fabiflu](resource), [Doxycycline](resource), [azithromycin](resource)
+    - What’s the status of [Tocilizumab](resource) availability?
+    - I am looking for [Tocilizumab](resource) suppliers. Please contact me on +918298396020 if anyone has any leads.
+    - Urgently looking for [remdesivir](resource) dose for patient whose has high fever
+    - Any leads for [remdesivir](resource) dose would be highly appreciated.
+    - Call for help!. Please help us procure [remdesivir](resource) doses for elderly patient in a critical condition
+    - Can anyone provide me the contact details of [remdesivir](resource) vendors?
+    - Can anyone provide me the contact details of [Tocilizumab](resource) vendors?
+    - Please help me find [hospital beds](resource) resources?
+    - Where do I get [Tocilizumab](resource)?
+    - need [Fabiflu](resource)!!
+    - immediate requirement of [azithromycin](resource) medicine.
+    - where can i find [Doxycycline](resource) doses?
+    - are [Dexamethasone](resource) doses available now?
+    - [azithromycin](resource) available?
+    - need [Doxycycline](resource)??
+    - [Dexamethasone](resource) available?
+    - where can i get [remdesivir](resource)?
+    - emergency require [azithromycin](resource)?
+    - Looking for [Dexamethasone](resource) medicine
+    - How can i get a [remdesivir](resource) medicine?
+    - Contact Person who provides [remdesivir](resource) dose
+    - Government authorities details who are providing [Fabiflu](resource)
+    - Government authorities details who are providing [remdesivir](resource)
+    - Price of a [Fabiflu](resource) dose
+    - Is there any covid medicine available?
+    - Is there any [remdesivir](resource) available?
+    - Are there verified leads for covid medicines?
+    - Are there verified leads for [Fabiflu](resource)?
+    - Are there verified leads for [Dexamethasone](resource)? 
+    - Are there verified leads for [remdesivir](resource)?
+    - Are there verified leads for [azithromycin](resource)?
+    - Are there any pharmaceuticals selling [remdesivir](resource) near me?
+    - Are there any pharmaceuticals selling [azithromycin](resource) near me?
+    - Find [Fabiflu](resource) 
+    - Find [Fabiflu](resource) 
+    - Find [Doxycycline](resource) 
+    - Find [remdesivir](resource) 
+    - Find [azithromycin](resource) 
+    - Find [Dexamethasone](resource)
+
+
+- intent: location
+  examples: |
+    - [Mumbai](location)
+    - [Delhi](location)
+    - [Pune](location)
+    - [Raipur](location)
+    - [Faridabad](location)
+    - [Agra](location)
+    - [Srinagar](location)
+    - [Ahmedabad](location)
+    - [Patna](location)
+    - [Agra](location)
+    - [Jaisalmer](location)
+    - [Jodhpur](location)
+    - [Jhargram](location)
+    - [Ranchi](location)
+    - [Jamshedpur](location)
+    - [Daltonganj](location)
+    - [Hazaribagh](location)
+    - [Muzzafarnagar](location)
+    - [Kalyan](location)
+    - [Dombivli](location)
+    - [Navi Mumbai](location)
+    - [Chennai](location)
+    - [Ernakulam](location)
+    - [Thiruvanathpuram](location)
+    - [Wayanad](location)
+    - [Kochi](location)
+    - [Kanpur](location)
+    - [Meerut](location)
+    - [Dehradun](location)
+    - [Amritsar](location)
+    - [Ambala](location)
+    - [Faridabad](location)
+    - [Noida](location)
+    - [Belapur](location)
+    - [Tarapur](location)
+    - [Darbhanga](location)
+    - [Kolhapur](location)
+    - [Belgaum](location)
+    - [Tumkura](location)
+    - [Belgavi](location)
+    - [Jaipur](location)
+    - [Sonipat](location)
+    - [Panipat](location)
+    - [Haridwar](location)
+    - [Rishikesh](location)
+    - [Rameshwaram](location)
+    - [Tawang](location)
+    - [Agartala](location)
+
+
+    
+- intent: vaccination_query
+  examples: |
+    - I would like to know more about vaccinations in India
+    - Where can I know more about vaccinations?
+    - I'm looking for information about vaccinations
+    - Tell me about vaccination
+    - Looking to get vaccinated.
+    - Can I get answers related to questions on vaccination?
+    - What kind of answers can you give me related to vaccines?
+    - Queries related to vaccination
+    - Urgent help needed for vaccination.
+    - Please help me to get vaccinated.
+    - Vaccination information
+    - I want to know about vaccine
+    - I want to know about vaccination
+    - Hey! I want to know about vaccine
+    - Hello! I want to know about vaccination
+    - Can i get information on Vaccine in India
+    - Please tell me information about vaccination 
+    - Can i have some knowledge of vaccination process in India
+    - I would like to know more about vaccine
+    - I would like to know more about vaccination
+    - Vaccination in India
+    - About Vaccine
+    - About Vaccination
+    - Share knowledge on vaccination
+
+- intent: vaccination_types
+  examples: |
+    - Which vaccines are available in right now?
+    - Which vaccine are there?
+    - Types of Vaccine
+    - What are the type of vaccines available in India?
+    - Which kind of vaccines are available in India?
+    - What are the different kind of vaccines available in India?
+    - What are all the vaccicnes which has been approved by the Indian Govt?
+    - Information about Covishield
+    - Information about Covaxin
+    - Information about Sputnik
+    - Which Covid 19 Vaccines are licensed in India?
+    - Types of vaccines available near me.
+    - Vaccination Types
+    - Vaccine Types
+    - Types of vaccination
+    - Types of Vaccine
+    - Vaccination of different types
+    - Vaccine of different types
+    - Different types of vaccination
+    - Different types of vaccine
+    - Vaccine and its types
+    - Vaccination and its types
+    - Variety of vaccine available
+    - Variety of vaccination available
+    - Is Covishield available near me?
+    - Is Covaxin available near me?
+    - Vaccines available near me
+    - types of Vaccines shots available near me
+    - types of Vaccines doses available near
+    - How many types of vaccines are available?
+    - Types of vaccine in Madhya Pradesh.
+    - Types of vaccine in Uttar Pradesh.
+    - Types of vaccine for age above 45.
+    - Types of vaccine for age above 18.
+
+
+- intent: vaccination_eligibility
+  examples: |
+    - Vaccine Eligiblity
+    - Am I eligible to get vaccinated?
+    - Who are eligible to get vaccinated in India?
+    - Who can get vaccine in India?
+    - Who is eligible to get a vaccine
+    - I am 26 years old, am I eligible?
+    - What is the age range to get vaccinated?
+    - How to check eligibility criteria?
+    - What is the eligibility criteria to get vaccinated?
+    - Should I take the vaccine if I am cured of Covid?
+    - Why vaccination is not provided to children who are usual target?
+    - Will COVID-19 vaccine be given to everyone simultaneously?
+    - Is it necessary for a COVID-19 recovered person to take the vaccine?
+    - Can a person presently having COVID-19 (confirmed or suspected) infection be vaccinated?
+    - If I had COVID-19 infection and was treated, should I receive the vaccine?
+    - How will I know if I am eligible for vaccination?
+    - Is the vaccine contraindicated in person with chronic diseases?
+    - Are people above age 18 eligible for Sputnik?
+    - Are people above age 18 eligible for Covishield?
+    - Are people above age 18 eligible for Covaxin?
+    - Are people above age 45 eligible for Sputnik?
+    - Are people above age 45 eligible for Covishield?
+    - Are people above age 45 eligible for Covaxin?
+    - I am pregnant, am I eligible for vaccination?
+    - I just had surgery, am I eligible to get vaccinated?
+    - I have cancer, am I eligible to get vaccinated?
+    - I got some severe side-effects when I got vaccinated when I was child, am I eligible for covid vaccine?
+    - Can vaccine shot be taken during menstruation?
+    - Are pregnant women recommend to get covid 19 vaccine?
+    - I am 40 years old and i have diabetes. Am i eligible for vaccine
+    - What is the eligibility criteria for me?
+    - am I eligible?
+    - how to check if I am eligible?
+    - How do I know that I am eligible?
+    - Eligibility Criteria
+    - Criteria for eligibility
+  
+- intent: vaccination_efficacy
+  examples: |
+    - How effective is covishield vaccine?
+    - What's the efficacy of the covishield vaccine?
+    - Which is the best vaccine?
+    - Which vaccine is better?
+    - Which vaccine is good for me?
+    - How effective is covishield?
+    - How effective is Covaxin?
+    - How effective is sputnik?
+    - Which covid vaccine is more effective?
+    - How to check the efficacy of the vaccine?
+    - Have the vaccines undergone the needed clinical trials?
+    - Which vaccine is better between Covisheild and Covaxin?
+    - What is the safety and efficacy of the vaccines used in the country?
+
+- intent: vaccination_side_effects_and_benefits
+  examples: |
+    - Will I get fever after vaccine ?
+    - Will I fall sick?
+    - Is vaccine dangerous?
+    - Is vaccination safe?
+    - Is vaccination harmful for me?
+    - Will covishield protect me from Covid?
+    - Will covaxin prevent me from Covid?
+    - Will Sputnik V protect me from Covid?
+    - Will vaccination make me sick?
+    - Will covishield make me sick?
+    - Will I get covid after vaccines?
+    - Am I at a greater risk of falling sick after vaccination?
+    - I am having diabetes. Is vaccine safe for me?
+    - I am having hypertension. Is vaccine safe?
+    - Is vaccine safe for people with co-morbidity?
+    - Vaccine Side Effects and Benefits 
+    - What are the most common side effects of Covishield?
+    - Can vaccine stop coronavirus?
+    - What are the benefits of taking coronavirus vaccine?
+    - What are the risk of Covid vaccine?
+    - Why should i get the Covid vaccine?
+    - What are the side effects of the covid vaccine?
+    - Is the vaccine safe for people under 30
+    - Am I going to die from Covid vaccine?
+    - Is Covid Vaccine lethal?
+    - Will getting the vaccine get me sick?
+    - Will the vaccine make me sick?'
+    - Why should I take the vaccine?
+    - Is Covishield safe?
+    - Is Covaxin safe?
+    - Is Sputnik V safe?
+    - Are there any side effects after taking a covid vaccine?
+    - What are the side effects after taking a covid vaccine?
+    - What are the immediate side effects after taking the vaccine?
+    - What are the benefits of taking the vaccine?
+    - What will happen to me if I take the vaccine?
+    - Is taking the vaccine beneficial?
+    - How long will it take to develop the immunity after taking the vaccine?
+    - Does vaccination protect me against newer strains / mutated virus of SARS-CoV 2?
+    - In how many days will the vaccination create an adequate immune response and protection?
+    - Should you avoid alcohol after receiving the COVID-19 vaccine?
+    - What precautions I need to take after receiving the vaccine?
+    - Is it important for me to receive the same vaccine during second dose?
+    - Does this vaccine provide herd immunity?
+    - If I had COVID-19 infection and was treated, why should I receive the vaccine?
+    - Is it necessary to take the COVID-19 vaccine?
+    - What if I test COVID-19 positive after taking a vaccine jab?
+
+- intent: vaccination_dosage_regime
+  examples: |
+    - Vaccine Dosage Regime
+    - How many days should I wait for the second dose?
+    - For covishield what is the ideal dose interval?
+    - What is the best time gap between 1st and 2nd vaccine dose?
+    - I have taken the first Covishield dose, when should I take the second dose?
+    - I have got my first shot, how much longer should I wait to get the second dose?
+    - What's the doasage regime for covid vaccine?
+    - Time between the 2 dose?
+    - How much should I wait for the second dose?
+    - What's the best dosage interval?
+    - What is the time gap between the first and the second dose?
+    - What's the ideal time gap between the Covaxin dose?
+    - What's the ideal time gap between the Covishield dose?
+    - Ideal time gap between Sputnik Dose
+    - How much time does it take to generate antibody?
+    - When is antibody generated in my body after taking a vaccine?
+    - How long should I wait to make sure vaccine is 100% effective? 
+    - What medications should be avoided before taking COVID-19 vaccine and for how long?
+    - Does the second dose of COVID-19 vaccine have to be taken at the same centre as the first one?
+
+
+- intent: vaccination_registration_centre_pricing
+  examples: |
+    - Where can I get vaccinated?
+    - I am looking for vaccination centre. Where can I find that information?
+    - Vaccination centre?
+    - Vaccine Registration and Centre and Pricing 
+    - Where can I register for the vaccine?
+    - Vaccine centre near me?
+    - Where can I get my Vaccine Certificate
+    - What's the closest vaccine centre near me?
+    - Where can I register myself for COVID vaccination?
+    - What's the price of the COVID vaccines
+    - Cost of Vaccine?
+    - What is the nearest vaccination centre to my location?
+    - What's the price of Covaxin vaccine?
+    - What is the price of Covishield Vaccine?
+    - How much is the vaccine going to cost me?
+    - What is the process of Vaccine Registration?
+    - How can I register for the Vaccine?
+    - What are the updates regarding the vaccine?
+    - Vaccination centre near me?
+    - How can I get vaccine near me?
+    - How can I get vaccinated near me?
+    - Is the vaccine available for free?
+    - Is the vaccine available for free for age between 18-45?
+    - Is the vaccine available for free for above 18?
+    - Is the vaccine available for free for above 45?
+    - Documents required for registration
+    - Photo ids required for registration
+    - How will the beneficiary receive information about due date of vaccination?
+    - Will I get any certificate that I am vaccinated?
+    - How do I pre-register myself online for an appointment for vaccination?
+    - Can a person get vaccinated without registration?
+    - Can a person get the COVID-19 vaccine without registration with Health Department?
+    - Can a person get vaccinated without photo id?
+    - What documents are required for registration of eligible beneficiary?
+    - Government vaccicne center near me
+    - Private vaccicne center near me 
+    - How much will each vaccine cost?
+    - Will the vaccine be available at pharmacies?
+    
+
+
+
+
+
+- intent: thanking
+  examples: |
+    - thank you
+    - thanks
+    - very helpful
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hey there
+    - hi i have a few questions
