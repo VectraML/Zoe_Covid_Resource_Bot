@@ -16,9 +16,7 @@ The tweet scrapper API makes use of the ```twint``` ```nltk``` ```sci-kit learn`
 
 ### Twint Installation
 
-To install Twint use the following command
-
-```pip install twint```
+To install Twint use the following command ```pip install twint```
 
 Before using Twint, the config needs to be changed. The configuration setup is shown in the ```app.py``` file present in the ```service``` directory
 
