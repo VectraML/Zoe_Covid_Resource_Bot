@@ -17,7 +17,23 @@ To install Twint use the following command
 
 Before using Twint, the config needs to be changed. The configuration setup is shown in the ```app.py``` file present in the ```service``` directory
 
+### NLTK Installation
 
+To install NLTK use the following command
+
+```pip install nltk```
+
+### Sci-kit Learn Installation
+
+To install scikit-learn use the following command 
+
+```pip install sklearn```
+
+### Flask Installations
+
+To install flask and flask-cors use the following commnad
+
+```pip install flask ``` and ```pip install flask-cors```
 
 ## RASA Chatbot
 
@@ -29,6 +45,8 @@ All of the contents for this file have been picked up from [Rasa Masterclass](ht
 
 This is a TL;DR version. 
 
+------------
+# Installing RASA, Training the bot and Running it
 ------------
 
 ## Prerequisite knowledge
