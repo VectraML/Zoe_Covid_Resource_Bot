@@ -1,0 +1,91 @@
+version: "2.0"
+
+intents:
+  - need_oxygen_with_location
+  - need_oxygen
+  - need_plasma_with_location
+  - need_plasma
+  - need_hospital_beds_with_location
+  - need_hospital_beds
+  - looking_for_medicine
+  - need_medicines_with_location
+  - need_medicines
+  - location
+  - vaccination_query
+  - vaccination_types
+  - vaccination_eligibility
+  - vaccination_efficacy
+  - vaccination_side_effects_and_benefits
+  - vaccination_dosage_regime
+  - vaccination_registration_centre_pricing
+  - thanking
+  - bot_challenge
+  - greet
+
+entities:
+  - resource
+  - location
+
+slots:
+  resource:
+    type: text
+  location:
+    type: text
+
+responses:
+
+  utter_greet: 
+  - text: "Hello"
+  - text: "Hi there"
+
+  utter_how_can_i_help:
+  - text: "How can I help you?"
+  - text: "What can I help you find?"
+
+  utter_availability_with_location:
+  - text: "Please Wait! Results will be displayed soon"
+
+  utter_which_medicine:
+  - text: "Which medicine are you looking for?"
+  
+  utter_scrape_query:
+  - text: "{location} AND {resource} AND verified"
+
+  utter_ask_location:
+  - text: "Can you please provide us with your location?"
+
+  utter_vaccination_query_reply: 
+  - text: "Sure, what would you like to know about vaccinations in India?"
+
+  utter_vaccination_types_reply:
+  - text: "In India, right now Covishield (AstraZeneca-Oxford), Covaxin (Bharat Biotech) and Sputnik V (Dr.Reddy's Lab and Gamaleya Institute) are being administered."
+
+  utter_vaccination_eligibility:
+  - text: "In India, anyone over the age of 18 can get vaccinated starting May 1st."
+  
+  utter_vaccination_efficacy:
+  - text: "The efficacy of Covishield is 70%. Covaxin has shown an efficacy of 86% and the Sputnik V has an efficacy of 94%."
+  
+  utter_vaccination_side_effects_and_benefits:
+  - text: "Please get vaccinated as soon as you can. The vaccine reduces the chance of getting a severe disease and helps break trasnmission. 
+  The vaccine does have some mild side effects such as headache, fever, localized pain. if these perists longer, please consult your physician. For further informations please visit 
+  https://www.mohfw.gov.in/covid_vaccination/vaccination/index.html"
+  
+  utter_vaccination_query_dosage_regime:
+  - text: "For Covishield (AstraZeneca), you should wait 28-56 days to get the second dose. For Covaxin (Bharat BioTech), the recommended gap between the 2 doses is 28 days. For Sputnik V (Dr. Reddy's Lab), the recommended gap between 2 doses is 21 days. Even after vaccine, you can get infected so please keep using mask and maintain social distancing.  "
+  
+  utter_vaccination_registration_centre_pricing:
+  - text: "You can go on to CoWin (https://www.cowin.gov.in/) or Umang (https://web.umang.gov.in/web/login) and register to get more information about this. You can additionally do this through the CoWin Tab in the Aarogya Setu app."
+  
+  utter_thanking:
+  - text: "Thank you"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+
+  
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

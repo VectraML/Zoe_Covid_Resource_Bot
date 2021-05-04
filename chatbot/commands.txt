@@ -1,0 +1,7 @@
+rasa train
+
+In separate terminals:
+rasa run --enable-api --cors "*"
+rasa run actions
+
+ngrok http 5005
