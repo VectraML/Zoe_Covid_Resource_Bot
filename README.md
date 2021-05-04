@@ -10,6 +10,10 @@ The whole website is made up of 3 component:
 - RASA Chatbot API (Running on port 5005 and interacting with the front end website to generate dialogue and capture required data for scrapper)
 - Twitter Scrapper and NLP to filter relevant tweets about a COVID related resource (Running on port 5000 and interacting with the front website to display the result)  
 
+# Demo
+
+![alt text](https://github.com/VectraML/Covid_Resource_Tracker/blob/Main/source/Hackathon.gif?raw=true)
+
 ## Web Scrapper and NLP API
 
 The tweet scrapper API makes use of the ```twint``` ```nltk``` ```sci-kit learn``` ```flask``` libraries 
