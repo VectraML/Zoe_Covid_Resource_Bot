@@ -11,8 +11,6 @@ Code and Design of the COVID Resource Tracker created by the Vectra Machine Lear
 
 ### RASA Chatbot Installation
 
-First install RASA Chatbot in a new virtual environment using the command 
-# Rasa Chatbot
 A basic rasa setup which can be built upon
 
 All of the contents for this file have been picked up from [Rasa Masterclass](https:**//info.rasa.com/masterclass).
