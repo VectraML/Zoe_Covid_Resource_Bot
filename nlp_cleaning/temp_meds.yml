@@ -1,0 +1,160 @@
+- intent: need_medicines_with_location
+  examples: |
+    - Is [remdesivir](resource) stock available in [Delhi](location)?
+    - Is [Fabiflu](resource) available in [Pune](location)?
+    - Can I avail [Tocilizumab](resource) from pharmacies for individual purposes in [Hyderabad](location)?
+    - Can I get [remdesivir](resource) or [Fabiflu](resource) or [Tocilizumab](resource) without a prescription in [Agra](location)?
+    - Can I get [remdesivir](resource), [Fabiflu](resource), [Tocilizumab](resource) without a prescription in [Agra](location)?
+    - Where can I get [remdesivir](resource) in [Vishakhapattanam](location)?
+    - Nearest places where I can get [remdesivir](resource) , from other than [Varanasi](location) city?
+    - Where can I get [Fabiflu](resource) and [Trivandrum](location)?
+    - Government pharmacy to buy [Fabiflu](resource) in [Nagpur](location).
+    - Private pharmacy to buy [Fabiflu](resource) in [Jaipur](location).
+    - Price of [Tocilizumab](resource) [Raipur](location).
+    - Contact number of pharmacies selling [Tocilizumab](resource) in [Bilaspur](location)?
+    - Contact number of suppliers providing [Tocilizumab](resource) in [Thane](location)?
+    - Where can I find [remdesivir](resource) centers in [Chandigarh](location)?
+    - Are [remdesivir](resource) suppliers available in [Mumbai](location)?
+    - Are [remdesivir](resource) suppliers available in [Delhi](location)?
+    - Are [Fabiflu](resource) suppliers available in [Chennai](location)?
+    - Are [Fabiflu](resource) suppliers available in [Kolkata](location)?
+    - Are [Fabiflu](resource) suppliers available in [Banglore](location)?
+    - Are [Tocilizumab](resource) suppliers available in [Bhopal](location)?
+    - Are [Tocilizumab](resource) suppliers available in [Allahabad](location)?
+    - Are [Tocilizumab](resource) suppliers available in [Lucknow](location)?
+    - Where can I find pharmacies selling [remdesivir](resource) in  [Ahmedabad](location)?
+    - I am looking for pharmacies selling [Fabiflu](resource) in and around [Patna](location)?
+    - Where can I find pharmacies selling [Tocilizumab](resource) donors in [Bhopal](location). It’s very urgent. Please help!
+    - What’s the availability status of [remdesivir](resource) in [Tamil Nadu](location)?
+    - I am looking for suppliers of [remdesivir](resource) medicine in [Patna](location). Please contact me on +918298396020 if anyone has any leads.
+    - Urgently looking for [Fabiflu](resource) supliers for patient in [Delhi](location) 
+    - Any leads for suppliers of [Fabiflu](resource) medicine in and around [Thane](location) would be highly appreciated.
+    - Call for help!. Please help us procure [Fabiflu](resource) for elderly patient in a critical condition in Ahmedabad(location)
+    - Can anyone provide me the contact details of [remdesivir](resource) suppliers in [Hyderabad](location)?
+    - Please help me find [remdesivir](resource) resources in [Jammu](location)?
+    - Where can I get [Tocilizumab](resource) in [Kanpur](location)?
+    - need [Tocilizumab](resource) in [hyderabad](location)?
+    - immediate requirement of [remdesivir](resource) in [kanpur](location)?
+    - where can i find suppliers of [remdesivir](resource) in [kasol](location)?
+    - are pharmacies in [bombay](location) selling [Fabiflu](resource)?
+    - [Doxycycline](resource) available in [vizag](location)?
+    - need [Dexamethasone](resource) in [tirupathi](location) ?
+    - [Doxycycline](resource) stock available at [lucknow](location)?
+    - where can i get [Doxycycline](resource) medicine in [shimla](location)?
+    - need [Doxycycline](resource) in [warangal](location)?
+    - emergency require [azithromycin](resource) in [chennai](location)?
+    - Are [azithromycin](resource) medicines available in [Mumbai](location)
+    - Any Government pharmacy near [Bhopal](location) selling [Dexamethasone](resource)?
+    - From where i can get [Dexamethasone](resource) medicine in [Indore](location)
+    - Looking for [Dexamethasone](resource) medicine in [Agra](location)
+    - Urgent required for [Doxycycline](resource) medicine in [Gwalior](location)
+    - Looking for contact details of suppliers selling [Doxycycline](resource) medicine in [Gurgaon](location)
+    - Do pharmacies have [azithromycin](resource) medicine in [Mangalore](location)?
+    - Are there any pharmacies near [Puducherry](location) with available stock of [azithromycin](resource) medicine?
+    - Are pharmacies in [Nashik](location) selling [azithromycin](resource) now? 
+    - Contact details of of pharmacies with new stock of [azithromycin](resource) in [Salem](location). 
+    - Contact information of pharmacies with stock of [azithromycin](resource) in [Coimbatore](location). 
+    - Do [Doxycycline](resource) suppliers in [Goa](location) have stock available?
+    - Do [Doxycycline](resource) suppliers in [Calicut](location) have stock available?
+    - Do [azithromycin](resource) suppliers in [Varanasi](location) have stock now?
+    - Do [Dexamethasone](resource) suppliers near [Mysore](location) have stock now?
+    - Where can I find fresh stock of [remdesivir](resource) and [Fabiflu](resource) medicines in [Ludhiana](location)?
+    - Where can I find stock of [remdesivir](resource) and [Tocilizumab](resource) medicines in [Amritsar](location)?
+    - Where can I find pharmacies selling [remdesivir](resource) and [Tocilizumab](resource) in [Nagpur](location)?
+    - Where can I find suppliers of [remdesivir](resource) and [Fabiflu](resource) in [Surat](location)? 
+    - Which pharmacy in [Bhopal](location) has fresh stock of [remdesivir](resource) and [Fabiflu](resource) medicines?
+    - Which supplier in [Bhubaneshwar](location) has latest stock of [remdesivir](resource)?
+    - Which supplier in [Pondicherry](location) has [remdesivir](resource) medicine fresh stock?
+    - Which pharmacy in [Vellore](location) has [Fabiflu](resource) stock now?
+    - Contact number of agents with fresh stock of [Fabiflu](resource) in [Madurai](location).
+    - Contact details of with stock of [Fabiflu](resource) in [Ghaziabad](location).
+    - Contact information of pharmacies [Tocilizumab](resource) in [Allahabad](location).
+    - Contact number of suppliers selling [Tocilizumab](resource) near [Raipur](location).
+    - Contact details of pharmacies selling [Tocilizumab](resource) in [Faridabad](location).
+    - Contact information of suppliers of [Tocilizumab](resource) in [New Delhi](location).
+    - Contact information of pharmacies selling [Fabiflu](resource) near [Bangalore](location).
+    - Personal contact of suppliers of [remdesivir](resource) medicines in [Delhi](location).
+    - Is there [Fabiflu](resource) supply now in [Navi Mumbai](location). 
+    - [Tocilizumab](resource) availability near [Vijayawada](location).
+    - [remdesivir](resource) near [Udaipur](location). 
+    - Who is supplying [remdesivir](resource) medicines near [Shimla](location). 
+    - Who is supplying [remdesivir](resource) now in [Aurangabad](location). 
+    - Where can I get [Tocilizumab](resource) medicine in [Dehradun](location)?
+    - Who do I contact for [Tocilizumab](resource) near [Rajkot](location)?
+    - Where do I go to get [Fabiflu](resource) in [Jabalpur](location)?
+    - Can I get [Fabiflu](resource) medicine now in [Noida](location)?
+
+- intent: need_medicines
+  examples: |
+    - Is [remdesivir](resource) available in my city?
+    - Is [Fabiflu](resource) available in my city?
+    - Is [Tocilizumab](resource) available in my city?
+    - Can I avail [Fabiflu](resource) for individual purposes?
+    - Can I avail [Tocilizumab](resource) for individual purposes?
+    - Can I get a [Tocilizumab](resource) without a prescription?
+    - Where can I get [Tocilizumab](resource) in my city?
+    - Nearest places where I can get [remdesivir](resource), from other than my city?
+    - Where can I get [remdesivir](resource) and oxygen?
+    - Government [Fabiflu](resource) pharmacies near me.
+    - Private [Tocilizumab](resource) pharmacies near me.
+    - Price of [remdesivir](resource) near me.
+    - Price of [Fabiflu](resource) near me.
+    - Price of [Tocilizumab](resource) near me.
+    - Contact number of authorities providing [Fabiflu](resource) near me?
+    - Contact number of pharmacies providing [Tocilizumab](resource) near me?
+    - Contact number of a person providing [remdesivir](resource) near me?
+    - How many [remdesivir](resource) doses can I get?
+    - How much cost will it take for a single [remdesivir](resource) dose?
+    - I am looking for [remdesivir](resource).
+    - I am looking for [Tocilizumab](resource).
+    - I am looking for [Tocilizumab](resource).
+    - Where can I find [Tocilizumab](resource). It’s very urgent. Please help!
+    - Where can I find [remdesivir](resource). It’s very urgent. Please help!
+    - Where can I find [Fabiflu](resource). It’s very urgent. Please help!
+    - Find [remdesivir](resource) or [Tocilizumab](resource) or [Fabiflu](resource) or  [Doxycycline](resource) or [azithromycin](resource)
+    - Find [remdesivir](resource), [Tocilizumab](resource), [Fabiflu](resource), [Doxycycline](resource), [azithromycin](resource)
+    - What’s the status of [Tocilizumab](resource) availability?
+    - I am looking for [Tocilizumab](resource) suppliers. Please contact me on +918298396020 if anyone has any leads.
+    - Urgently looking for [remdesivir](resource) dose for patient whose has high fever
+    - Any leads for [remdesivir](resource) dose would be highly appreciated.
+    - Call for help!. Please help us procure [remdesivir](resource) doses for elderly patient in a critical condition
+    - Can anyone provide me the contact details of [remdesivir](resource) vendors?
+    - Can anyone provide me the contact details of [Tocilizumab](resource) vendors?
+    - Please help me find [hospital beds](resource) resources?
+    - Where do I get [Tocilizumab](resource)?
+    - need [Fabiflu](resource)!!
+    - immediate requirement of [azithromycin](resource) medicine.
+    - where can i find [Doxycycline](resource) doses?
+    - are [Dexamethasone](resource) doses available now?
+    - [azithromycin](resource) available?
+    - need [Doxycycline](resource)??
+    - [Dexamethasone](resource) available?
+    - where can i get [remdesivir](resource)?
+    - emergency require [azithromycin](resource)?
+    - Looking for [Dexamethasone](resource) medicine
+    - How can i get a [remdesivir](resource) medicine?
+    - Contact Person who provides [remdesivir](resource) dose
+    - Government authorities details who are providing [Fabiflu](resource)
+    - Government authorities details who are providing [remdesivir](resource)
+    - Price of a [Fabiflu](resource) dose
+    - Is there any covid medicine available?
+    - Is there any [remdesivir](resource) available?
+    - Are there any verified leads for covid medicines?
+    - Are there verified leads for covid medicines?
+    - Are there verified leads for [Fabiflu](resource)?
+    - Are there verified leads for [Dexamethasone](resource)? 
+    - Are there verified leads for [remdesivir](resource)?
+    - Are there verified leads for [azithromycin](resource)?
+    - Show me verified leads only for covid medicines
+    - Show me only verified leads for covid medicines
+    - Show me verified leads for covid medicines only
+    - Are there any pharmaceuticals selling [remdesivir](resource) near me?
+    - Are there any pharmaceuticals selling [azithromycin](resource) near me?
+    - I want to find medicines
+    - Find pharmacy
+    - Find [Fabiflu](resource) 
+    - Find [Fabiflu](resource) 
+    - Find [Doxycycline](resource) 
+    - Find [remdesivir](resource) 
+    - Find [azithromycin](resource) 
+    - Find [Dexamethasone](resource)
