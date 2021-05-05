@@ -1,5 +1,5 @@
 # Covid_Resource_Tracker
-Code and Design of the COVID Resource Tracker created by the Vectra Machine Learning Team. The contributors for this project are Akhil ![Github](https://github.com/nonemlihka), Surbhi, Saisha, Prashant, Muzzamil and Anish. The github repo is being maintained by Anish and Saisha. 
+Code and Design of the COVID Resource Tracker created by the Vectra Machine Learning Team. The contributors for this project are Akhil [Akhil's Github](https://github.com/nonemlihka), Surbhi [Surbhi's Github](https://github.com/sur1912/), Saisha [Saisha's Github](https://github.com/saishachhabria), Prashant [Prashant's Github](https://github.com/pr-shukla), Muzzamil and Anish [Anish's Github](https://github.com/AnishDelft). The github repo is being maintained by Anish and Saisha. 
 
 # Design
 
