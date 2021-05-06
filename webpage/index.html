@@ -7,7 +7,10 @@
 
     <title>COVID-19 Resource Tracker</title>
     <meta content="An open source platform to track covid resources across the Indian subcontinent" name="description">
-    <meta content="covid19 covid resources remdesvir hospital bed oxygen vaccinations" name="keywords">
+    <meta content="covid19 covid resources remdesvir hospital bed oxygen vaccinations machine learning natural language processing nlp deep learning rasa chatbot help india" name="keywords">
+
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
 
     <!-- Favicons -->
     <link href="assets/img/web_logo.jpeg" rel="icon">
@@ -22,12 +25,11 @@
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/bot.css" rel="stylesheet">
-    <link href="assets/css/autocomplete.css" rel="stylesheet">
-    
+    <link href="assets/css/styles.css" rel="stylesheet">
+
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
 
 </head>
 
@@ -57,7 +59,7 @@
 
             <div class="carousel-item active">
                 <div class="carousel-container">
-                    <h2 class="animate__animated animate__fadeInDown">Zoe: A Covid-19 <span>Resource Tracker</span></h2>
+                    <h2 class="animate__animated animate__fadeInDown"><a>Zoe: A Covid-19 Resource Tracker</a></h2>
                     <p class="animate__animated animate__fadeInUp">Zoe is our resouce bot, trained to help you. The word "Zoe" means life in Greek. <br>We hope to assist you in this battle against the Coronavirus.</p>
                     <p class="animate__animated animate__fadeInUp">Zoe can fetch and display sources to find resources such as oxygen, hospital beds, etc. from posts on Twitter.<br>Zoe can also give you relelvant information about the vaccination drive in India.</p>
                     <p class="animate__animated animate__fadeInUp">Get started by clicking on one of the resources below, or talking to Zoe in the chat box below.</p>
@@ -66,7 +68,8 @@
             </div>
         </div>
     </section>
-    <!-- End Landing -->
+
+
 
     <main id="main">
 
@@ -74,7 +77,7 @@
         <section id="icon-boxes" class="icon-boxes justify-content-center">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md col-lg-2 d-flex mb-1 mb-lg-0" data-aos="fade-up">
+                    <div class="col-lg-2 d-flex mb-1 mb-lg-0" data-aos="fade-up">
 
                         <button value="Oxygen" onclick="pingChatbot(this.value)">
                             <div class="icon-box">
@@ -85,7 +88,7 @@
 
                     </div>
 
-                    <div class="col-md col-lg-2 d-flex mb-1 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-2 d-flex mb-1 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
 
                         <button value="Medicine" onclick="pingChatbot(this.value)">
                             <div class="icon-box">
@@ -95,7 +98,7 @@
                         </button>
 
                     </div>
-                    <div class="col-md col-lg-2 d-flex mb-1 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-2 d-flex mb-1 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
                         <button value="Hospital Beds" onclick="pingChatbot(this.value)">
                             <div class="icon-box">
                                 <img src="assets/img/icons/hospital.png" class="icon">
@@ -104,7 +107,7 @@
                         </button>
                     </div>
 
-                    <div class="col-md col-lg-2 d-flex mb-1 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-lg-2 d-flex mb-1 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
                         <button value="Vaccine" onclick="pingChatbot(this.value)">
                             <div class="icon-box">
                                 <img src="assets/img/icons/vaccine.png" class="icon">
@@ -113,7 +116,7 @@
                         </button>
                     </div>
 
-                    <div class="col-md col-lg-2 d-flex mb-1 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+                    <div class="col-lg-2 d-flex mb-1 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
                         <button value="BloodPlasma" onclick="pingChatbot(this.value)">
                             <div class="icon-box">
                                 <img src="assets/img/icons/bloodplasma.png" class="icon">
@@ -130,7 +133,7 @@
 
         <!--  Chabot  -->
         <section class="chatbot" id="chatbot">
-            <div class="row justify-content-center msger" data-aos="fade-up" data-aos-delay="50">
+            <div class="row msger" data-aos="fade-up" data-aos-delay="50">
                 <header class="msger-header">
                     <div class="msger-header-title">
                         <i class="fas fa-comment-alt"></i> Zoe - A Covid Resource Chatbot
@@ -157,17 +160,48 @@
                     </div>
 
                 </div>
-                <form autocomplete="off" class="msger-inputarea" id="input_text">    
+                <form autocomplete="off" class="msger-inputarea" id="input_text">
                     <input autocomplete="off" type="text" id="chatbot_input" class="msger-input" placeholder="Enter your message here">
                     <button type="submit" class="msger-send-btn">Send</button>
                 </form>
             </div>
         </section>
 
-        <!-- Visualization code of fetched tweets -->
-        <section class="tweet_box justify-content-center" id="container">
-        </section>
+        
+        <!-- Resources and Visualization code of fetched tweets -->
+        <section class="resources" id="resources">
+            <section class="additional">
+                <h3 style="text-transform: uppercase; font-weight: 700;">Resources</h3><br>
+                <div>
+                    <h5 style="font-weight: 700;">Free COVID-19 Consultation</h5>
+                    <p>US Indian-American Physicians community have unanimously joined hands to provide COVID-19 consultations <strong>free of charge</strong> for India. </p>
+                    <p>To schedule an appointment visit <a href="www.mdtok.com/org/covid19">www.mdtok.com/org/covid19</a></p>
+                    <p>Free booking voucher code:
+                        <button class="bi bi-clipboard copy" value="voucher_code" onclick="CopyToClipboard(this.value)">
+                            <span id="voucher_code" style="float: left;margin-right: 0.5em;">mdtok2021</span>
+                        </button>
+                    </p>
+                </div>
 
+                <div>
+                    <h5 style="font-weight: 700;">Free COVID-19 Consultation</h5>
+                    <p>eGlobalDoctors working in association with AAPI physicians and SEWA international volunteers to make this service possible. </p>
+                    <p>To schedule an appointment visit <a href="https://www.eglobaldoctors.com/#/">https://www.eglobaldoctors.com/</a></p>
+
+                </div>
+            </section>
+
+            <section id="tweets" class="tweets">
+                <section class="tweet_box justify-content-center" id="container">
+                </section>
+                <div id="loader">
+                    <div class="spinner-grow text-dark" role="status">
+                    </div><br><br>
+                    <span>Fetching resources..</span>
+                </div>
+            </section>
+
+        </section>
 
         <!--  Legal Section  -->
         <section id="legal" class="legal section-bg">
@@ -204,7 +238,7 @@
                                     Vectra does not claim any copyright over the website or its content, which is intentionally created using open-source software to encourage and enable the public to use the information available to replicate or to improve the functionality of the website. Vectra however requests any such user that wishes to improve the functionality, to permit Vectra and other third parties to utilise the improved version, towards the benefit of public at large in order to combat COVID-19 together.
                                 </p>
                                 <p>
-                                    Should you wish to get in touch with the team at Vectra to suggest improvements/other functionalities that can be built-in to the website, please write to us at [insert email id].
+                                    Should you wish to get in touch with the team at Vectra to suggest improvements/other functionalities that can be built-in to the website, please write to us at <a href="mailto:iclr@vectraglobal.com" style="display: inline-block; padding: 0; font-weight: 600;">iclr@vectraglobal.com</a>.
                                 </p>
                             </div>
                         </li>
@@ -242,16 +276,12 @@
                                 </p>
                             </div>
                         </li>
-
-
                     </ul>
                 </div>
-
             </div>
-        </section><!-- End of Legal Section -->
-
-
-    </main><!-- End #main -->
+        </section>
+    </main>
+    
 
     <!--  Footer  -->
     <footer id="footer">
@@ -259,7 +289,7 @@
 
             <div class="logo">
                 <p>Powered by</p>
-                <img src="assets/img/vectra_logo.webp">
+                <img src="assets/img/vectra_logo.png" height="70">
             </div>
         </div>
     </footer>
@@ -272,6 +302,6 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/js/base.js"></script>
     <script src="assets/js/script.js"></script>
-  
+
 
 </body></html>
