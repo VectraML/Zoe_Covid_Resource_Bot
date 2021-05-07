@@ -8,10 +8,21 @@
 }
 
 
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background: #ffffff;
+        color: var(--color-2);
+    }
+
+    h1 {
+        color: var(--color-2);
+    }
+}
+
 .chatbot {
     margin: 0em 2em;
     height: 38em;
-    padding: 2%;
+    padding: 0 5%;
     font-family: "Raleway", sans-serif
 }
 
@@ -137,7 +148,7 @@
 .msger-input {
     flex: 1;
     background: #ddd;
-    border-radius: 2%; 
+    border-radius: 2%;
 }
 
 .msger-input:focus {
@@ -176,13 +187,52 @@ button img {
 }
 
 
-#container {
-    width: 35rem;
-    margin: 2% auto;
-    border-radius: 2%;
-    border: solid 5px var(--color-9);
-    padding: 1vh 1vw;
+#resources {
+    max-height: 80rem;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--color-4);
+    width: 100%;
+    overflow: hidden;
+    padding: 2em 0 3em;
 }
+
+#resources .additional {
+    max-height: 60rem;
+    width: 48%;
+    float: left;
+    padding: 0 4rem;
+}
+
+.copy {
+    padding: 0.7em;
+    background-color: gainsboro;
+    border-radius: 0;
+}
+
+#loader {
+    display: none;
+    z-index: 99;
+    height: 100%;
+    padding-top: 15vh;
+}
+
+#tweets {
+    display: none;
+}
+
+.tweets {
+    max-height: 60rem;
+    width: 50%;
+    float: left;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    display: none;
+    padding: 2em;
+}
+
 
 .tweet_box {
     height: 60rem;
@@ -196,15 +246,81 @@ button img {
 }
 
 
+#container {
+    width: 35rem;
+    border: solid 5px var(--color-9);
+    padding: 1vh 1vw;
+}
+
+
 footer {
-    position:static;
-    bottom: 0;
+    position: static;
+    bottom: 2em;
     text-align: center;
-    height: 4em;
     width: 90%;
-    border-top: solid 1px gray;
     margin: 0em 5%;
-    padding: 2em;
+    padding: 1em;
+}
+
+
+@media (max-width: 750px) {
+
+    #resources .additional {
+        padding: 0 1em;
+    }
+
+    #resources .additional h5 {
+        font-size: 16px;
+    }
+
+    #resources .additional p {
+        font-size: 14px;
+    }
+
+    .copy {
+        transform: scale(0.95);
+    }
+}
+
+@media (max-width: 660px) {
+
+/*
+    #resources {
+        height: auto;
+    }
+*/
+
+    #resources .additional {
+        padding: 0 4em;
+        float: none;
+        width: 100%;
+    }
+
+    #resources .additional h5 {
+        font-size: 18px;
+    }
+
+    #resources .additional p {
+        font-size: 14px;
+    }
+
+    .copy {
+        transform: scale(0.9);
+    }
+    
+    #loader{
+        width: 100%;
+        float: none;
+    }
+
+    .tweets {
+        width: 100%;
+        float: none;
+        height: 60rem;
+        align-content: center;
+        justify-content: center;
+        padding: 0;
+    }
 }
 
 
@@ -214,7 +330,7 @@ footer {
         max-width: 300px;
         font-size: 0.9em;
     }
-    
+
 
     .msger-inputarea * {
         font-size: 0.8em;
@@ -225,14 +341,26 @@ footer {
     }
 
     #container {
-        width: calc(100% - 50px);
+/*        width: calc(100% - 50px);*/
         margin: 2% auto;
     }
+    
+    #resources .additional {
+        padding: 0 2em;
+        float: none;
+        width: 100%;
+    }
 
-    .tweet_box {}
+    #resources .additional h5 {
+        font-size: 18px;
+    }
+
+    #resources .additional p {
+        font-size: 14px;
+    }
+
 
     footer {
-        transform: scale(0.6);
+        transform: scale(0.8);
     }
 }
-

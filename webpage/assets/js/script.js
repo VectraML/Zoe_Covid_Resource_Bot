@@ -26,13 +26,13 @@ const msgerInput = get(".msger-input");
 const msgerChat = get(".msger-chat");
 
 
-const hints = ["I need oxygen in ", "I need a hospital bed in " , "I'm looking for medicines", "I want to know about vaccinations", "I need blood plasma in "];
-const cities = ["Mumbai", "Delhi", "Bangalore", "Bareilly", "Agra", "Pune", "Jaipur", "Ahmedabad","Hyderabad","Kolkata","Chennai","Gurgaon","Gurugram","Surat","Lucknow",
-"Chandigarh","Indore","Patna","Vishakapatnam","Kanpur","Varanasi","Amritsar","Vadodara",
-"Kochi","Coimbatore","Nagpur","Noida","Faridabad","Ghaziabad","Rajkot","Nashik","Jodhpur",
-"Bhubaneswar","Udaipur","Guwahati","Ludhiana","Raipur","Meerut","Prayagraj","Gwalior","Thane"];
-const medicines = ["Remdesivir", "Dexamethasone", "Azithromycin" , "Hydroxychloroquine", 
-"Chloroquine", "Tocilizumab", "Kaletra", "Ivermectin", "Favipiravir" ,"Fabiflu" , "Cipremi"];
+const hints = ["I need oxygen in ", "I need a hospital bed in ", "I'm looking for medicines", "I want to know about vaccinations", "I need blood plasma in ", "I am looking for oxygen in "];
+const cities = ["Mumbai", "Delhi", "Bangalore", "Bareilly", "Agra", "Pune", "Jaipur", "Ahmedabad", "Hyderabad", "Kolkata", "Chennai", "Gurgaon", "Gurugram", "Surat", "Lucknow",
+"Chandigarh", "Indore", "Patna", "Vishakapatnam", "Kanpur", "Varanasi", "Amritsar", "Vadodara",
+"Kochi", "Coimbatore", "Nagpur", "Noida", "Faridabad", "Ghaziabad", "Rajkot", "Nashik", "Jodhpur",
+"Bhubaneswar", "Udaipur", "Guwahati", "Ludhiana", "Raipur", "Meerut", "Prayagraj", "Gwalior", "Thane"];
+const medicines = ["Remdesivir", "Dexamethasone", "Azithromycin", "Hydroxychloroquine",
+"Chloroquine", "Tocilizumab", "Kaletra", "Ivermectin", "Favipiravir", "Fabiflu", "Cipremi"];
 
 autocomplete(document.getElementById("chatbot_input"), hints);
 
@@ -47,7 +47,7 @@ const buttonQueries = {
 function scrollToDivision(div_id) {
     $('html, body').animate({
         scrollTop: $('#' + div_id).offset().top
-    }, 'slow');
+    }, 'smooth');
     return false;
 }
 
@@ -62,7 +62,7 @@ function pingChatbot(keyword) {
 function send(message) {
     console.log("User Message:", message)
     $.ajax({
-        url: 'https://b253dc275f2d.ngrok.io/webhooks/rest/webhook',
+        url: 'https://67b676c7b1cf.ngrok.io/webhooks/rest/webhook',
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({
@@ -70,6 +70,7 @@ function send(message) {
             "sender": "username"
         }),
         success: function (data, textStatus) {
+            console.log(data);
             if (data.length < 1) {
                 botResponse("I couldn\'t get that. Try asking in the format:")
                 botResponse("I'm looking for [oxygen/resdesvir/hospital bed] in [location]")
@@ -79,23 +80,25 @@ function send(message) {
                 console.log("Rasa Response: ", data, "\n Status:", textStatus)
 
                 // If all the slots are filled
-                
-                switch(data[0]["text"]) {
-                        
-                    case "Please Wait! Results will be displayed soon": 
+
+                switch (data[0]["text"]) {
+
+                    case "Please Wait! Results will be displayed soon":
                         scraperCall(data[1]["text"]);
                         break;
-                    
+
                     case "Can you please provide us with your location?":
                         autocomplete(document.getElementById("chatbot_input"), cities);
                         break;
-                    
+
                     case "Which medicine are you looking for?":
                         autocomplete(document.getElementById("chatbot_input"), medicines);
                         break;
 
+                    default:
+                        autocomplete(document.getElementById("chatbot_input"), []);
                 }
-                
+
             }
         },
         error: function (errorMessage) {
@@ -177,9 +180,20 @@ function formatDate(date) {
 
 async function scraperCall(message) {
 
+    scrollToDivision("resources");
+    
+    var y = document.getElementById("loader");
+    y.style.margin = "15vh";
+    y.style.display = "block";
+    y.style.verticalAlign = "middle";
+    console.log(y);
+    
+    var x = document.getElementById("tweets");
+    x.style.display = "flex";
+    
     console.log("User Message:", message)
     $.ajax({
-        url: 'https://8a65b1176e29.ngrok.io/tweets/', // Insert URL here
+        url: 'http://localhost:5000/tweets/', // Insert URL here
         type: 'POST',
         contentType: 'application/json', // Define and check the data format coming in
         data: JSON.stringify({
@@ -201,9 +215,12 @@ async function scraperCall(message) {
 
         }
     });
+    
 }
 
 async function scraperDisplay(data) {
+    
+    
     twttr.ready(function (twttr) {
         twttr.events.bind('tweet', function (e) {
             if (!e) return;
@@ -213,7 +230,7 @@ async function scraperDisplay(data) {
 
     jsonData = JSON.parse(data);
     var count = Object.keys(jsonData).length;
-    for (var i = 0; i < 20; i++) {
+    for (var i = 0; i < 2; i++) {
         twttr.widgets.createTweet(
             jsonData[i],
             document.getElementById('container'), {
@@ -224,13 +241,14 @@ async function scraperDisplay(data) {
 
     var x = document.getElementById("container");
     x.style.display = "block";
-
     x.style.height = "50rem";
     x.style.overflowX = "hidden";
     x.style.overflowY = "scroll";
-
+    
+    var y = document.getElementById("loader");
+    y.style.display = "none";
+    
     clearcontent("container");
-    scrollToDivision("container");
 }
 
 function clearcontent(elementID) {
@@ -252,10 +270,12 @@ function autocomplete(inp, arr) {
         a.style.zIndex = "9999";
         this.parentNode.appendChild(a);
         for (i = 0; i < arr.length; i++) {
-            if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-                b = document.createElement("DIV");
-                b.innerHTML = "<strong>" + arr[i].substr(0, val.length).trim() + "</strong>";
-                b.innerHTML += arr[i].substr(val.length);
+            if (arr[i].toUpperCase().includes(val.toUpperCase())) {
+                var idx = arr[i].toUpperCase().includes(val.toUpperCase()); // Get index of the substring
+                b = document.createElement("div");
+                b.innerHTML = arr[i].substr(0, idx + 1);
+                b.innerHTML += "<strong style='margin:0;padding:0;'>" + arr[i].substr(idx, val.length + 1).trim() + "</strong>";
+                b.innerHTML += arr[i].substr(idx + val.length + 1);
                 b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
                 b.addEventListener("click", function (e) {
                     inp.value = this.getElementsByTagName("input")[0].value;
@@ -285,7 +305,7 @@ function autocomplete(inp, arr) {
             e.preventDefault();
             if (currentFocus > -1) {
                 /*and simulate a click on the "active" item:*/
-              if (x) x[currentFocus].click();
+                if (x) x[currentFocus].click();
             }
         }
     });
@@ -322,6 +342,24 @@ function autocomplete(inp, arr) {
     document.addEventListener("click", function (e) {
         closeAllLists(e.target);
     });
+}
+
+function CopyToClipboard(containerid) {
+    if (document.selection) {
+        document.selection.empty();
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById(containerid));
+        range.select().createTextRange();
+        document.execCommand("copy");
+        
+    } 
+    else if (window.getSelection) {
+        window.getSelection().removeAllRanges();
+        var range = document.createRange();
+        range.selectNode(document.getElementById(containerid));
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+    }
 }
 
 //scraperDisplay(data);
