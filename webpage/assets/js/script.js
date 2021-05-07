@@ -45,9 +45,10 @@ const buttonQueries = {
 };
 
 function scrollToDivision(div_id) {
+    
     $('html, body').animate({
-        scrollTop: $('#' + div_id).offset().top
-    }, 'smooth');
+        scrollTop: $('#' + div_id).offset().top - 90
+    }, 'slow');
     return false;
 }
 
@@ -62,7 +63,7 @@ function pingChatbot(keyword) {
 function send(message) {
     console.log("User Message:", message)
     $.ajax({
-        url: 'https://67b676c7b1cf.ngrok.io/webhooks/rest/webhook',
+        url: 'http://localhost:5005/webhooks/rest/webhook',
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({
@@ -183,10 +184,13 @@ async function scraperCall(message) {
     scrollToDivision("resources");
     
     var y = document.getElementById("loader");
-    y.style.margin = "15vh";
+//    y.style.margin = "10vh";
     y.style.display = "block";
     y.style.verticalAlign = "middle";
     console.log(y);
+    
+    var z = document.getElementById("container");
+    z.style.display = "none";
     
     var x = document.getElementById("tweets");
     x.style.display = "flex";
@@ -230,7 +234,7 @@ async function scraperDisplay(data) {
 
     jsonData = JSON.parse(data);
     var count = Object.keys(jsonData).length;
-    for (var i = 0; i < 2; i++) {
+    for (var i = 0; i < 25; i++) {
         twttr.widgets.createTweet(
             jsonData[i],
             document.getElementById('container'), {
@@ -273,9 +277,9 @@ function autocomplete(inp, arr) {
             if (arr[i].toUpperCase().includes(val.toUpperCase())) {
                 var idx = arr[i].toUpperCase().includes(val.toUpperCase()); // Get index of the substring
                 b = document.createElement("div");
-                b.innerHTML = arr[i].substr(0, idx + 1);
-                b.innerHTML += "<strong style='margin:0;padding:0;'>" + arr[i].substr(idx, val.length + 1).trim() + "</strong>";
-                b.innerHTML += arr[i].substr(idx + val.length + 1);
+                if (idx != 0) { b.innerHTML = arr[i].substr(0, idx); }
+                b.innerHTML += "<strong style='margin:0;padding:0;'>" + arr[i].substr(idx, val.length + 1) + "</strong>";
+                b.innerHTML += arr[i].substr(idx + val.length +1);
                 b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
                 b.addEventListener("click", function (e) {
                     inp.value = this.getElementsByTagName("input")[0].value;
@@ -362,6 +366,3 @@ function CopyToClipboard(containerid) {
     }
 }
 
-//scraperDisplay(data);
-
-//scraperCall("Kalyan AND Remdesvir AND Verified")
