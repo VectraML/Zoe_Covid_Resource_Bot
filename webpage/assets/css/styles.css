@@ -20,6 +20,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: var(--color-1);
+    scroll-behavior: smooth;
 }
 
 a {
@@ -285,12 +286,13 @@ h6 {
 #hero {
     width: 100%;
     padding: 5em 0em 3em;
+    height: 70vh;
     overflow: hidden;
     position: relative;
     background: url("../img/hero-bg.jpeg") top center;
     background-size: cover;
     position: relative;
-    margin-bottom: -80px;
+    margin-bottom: -60px;
     z-index: 99;
     transition: 0.3s;
 }
@@ -627,12 +629,13 @@ section {
 .msger-input {
     flex: 1;
     background: #ddd;
-    border-radius: 2%;
     border-radius: 50px;
+    outline: none;
 }
 
 .msger-input:focus {
-    outline: 2px groove var(--color-9);
+    border: 1px solid var(--color-9);
+    outline: 0px groove var(--color-9);
 }
 
 .msger-send-btn {
@@ -732,7 +735,7 @@ button img {
     display: none;
     z-index: 99;
     height: 100%;
-    padding-top: 15vh;
+    padding-top: 5vh;
 }
 
 #tweets {
