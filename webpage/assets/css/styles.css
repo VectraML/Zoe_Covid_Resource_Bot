@@ -20,6 +20,7 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: var(--color-1);
+    scroll-behavior: smooth;
 }
 
 a {
@@ -285,12 +286,13 @@ h6 {
 #hero {
     width: 100%;
     padding: 5em 0em 3em;
+    height: 70vh;
     overflow: hidden;
     position: relative;
     background: url("../img/hero-bg.jpeg") top center;
     background-size: cover;
     position: relative;
-    margin-bottom: -90px;
+    margin-bottom: -60px;
     z-index: 99;
     transition: 0.3s;
 }
@@ -352,7 +354,7 @@ h6 {
     width: 80%;
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 10px auto;
     color: #fff;
 }
 
@@ -366,12 +368,13 @@ h6 {
     padding: 12px 32px;
     border-radius: 50px;
     transition: 0.5s;
-    line-height: 1;
+    line-height: ;
     margin: 10px;
     color: #fff;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
     border: 2px solid var(--color-6);
+    z-index: 9999;
 }
 
 #hero .btn-get-started:hover {
@@ -420,9 +423,11 @@ section {
 
 /* Icon Boxes */
 .icon-boxes {
-    padding-top: 7vh;
+    margin-top: 7vh;
+    padding-top: 0;
     position: relative;
     z-index: 100;
+    background-color: white;
 }
 
 .icon-boxes .container {
@@ -624,11 +629,13 @@ section {
 .msger-input {
     flex: 1;
     background: #ddd;
-    border-radius: 2%;
+    border-radius: 50px;
+    outline: none;
 }
 
 .msger-input:focus {
-    outline: 2px groove var(--color-9);
+    border: 1px solid var(--color-9);
+    outline: 0px groove var(--color-9);
 }
 
 .msger-send-btn {
@@ -728,7 +735,7 @@ button img {
     display: none;
     z-index: 99;
     height: 100%;
-    padding-top: 15vh;
+    padding-top: 5vh;
 }
 
 #tweets {
